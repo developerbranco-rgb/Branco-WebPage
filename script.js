@@ -7,8 +7,8 @@
    3) EMAIL: tu correo de contacto.
    ===================================================================== */
 const CONFIG = {
-  WHATSAPP:  "5490000000000",      // <-- REEMPLAZÁ por tu número real
-  INSTAGRAM: "tu_usuario",         // <-- REEMPLAZÁ por tu usuario de Instagram
+  WHATSAPP:  "5493466459010",      // Branco — WhatsApp (54 9 3466 459010)
+  INSTAGRAM: "branco.sax",         // Instagram @branco.sax
   EMAIL:     "brancoantu9@gmail.com"
 };
 /* ===================================================================== */
