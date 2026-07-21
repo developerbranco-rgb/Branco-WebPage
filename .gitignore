@@ -1,0 +1,9 @@
+# Archivos fuente originales (pesados) — NO se suben.
+# Ya están optimizados dentro de /assets. Los originales quedan en tu OneDrive.
+/videos/
+/imagenes/
+
+# Sistema
+Thumbs.db
+.DS_Store
+desktop.ini
