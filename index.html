@@ -1,289 +1,766 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Branco Martín — Saxofonista | Show en vivo para tus eventos</title>
-  <meta name="description" content="Branco Martín, saxofonista. Show solista de saxo en vivo sobre pistas para casamientos, recepciones, fiestas y cumpleaños. Sonido propio disponible. Mirá los videos y contratá tu show." />
-  <meta name="theme-color" content="#131110" />
+<!doctype html>
+<html lang="es-AR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Branco — Saxofonista | Show en vivo para tus eventos</title>
+    <meta
+      name="description"
+      content="Branco, saxofonista. Show solista de saxo en vivo sobre pistas para casamientos, fiestas y eventos. Sonido propio. Mirá los videos."
+    />
+    <meta name="theme-color" content="#131110" />
+    <meta name="robots" content="index, follow" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Branco Martín — Saxofonista" />
-  <meta property="og:description" content="Show solista de saxo en vivo para casamientos, recepciones, fiestas y cumpleaños. Sonido propio disponible." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/img/hero.jpg" />
+    <!-- Si publicás en otro dominio, cambiá esta URL acá, en el sitemap.xml
+         y en el robots.txt (es el único lugar donde está escrita). -->
+    <link rel="canonical" href="https://brancomartin.github.io/" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎷</text></svg>" />
-</head>
-<body>
+    <!-- Open Graph / redes -->
+    <meta property="og:site_name" content="Branco — Saxofonista" />
+    <meta property="og:title" content="Branco — Saxofonista" />
+    <meta
+      property="og:description"
+      content="Show de saxo en vivo para casamientos, fiestas y eventos. Sonido propio."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_AR" />
+    <meta property="og:url" content="https://brancomartin.github.io/" />
+    <meta
+      property="og:image"
+      content="https://brancomartin.github.io/assets/img/hero.jpg"
+    />
+    <meta
+      property="og:image:alt"
+      content="Branco tocando el saxo iluminado por las luces del escenario"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
 
-  <!-- ============ NAV ============ -->
-  <nav class="nav" id="nav">
-    <a href="#inicio" class="nav__brand">Branco<span>.</span>Martín</a>
-    <div class="nav__links" id="navLinks">
-      <a href="#inicio">Inicio</a>
-      <a href="#show">El show</a>
-      <a href="#eventos">Eventos</a>
-      <a href="#videos">Videos</a>
-      <a href="#bandas">Bandas</a>
-      <a href="#contacto" class="btn btn--gold">Contratar</a>
-    </div>
-    <button class="nav__toggle" id="navToggle" aria-label="Menú">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,600&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Sin JavaScript el contenido igual se ve -->
+    <noscript
+      ><style>
+        .reveal {
+          opacity: 1;
+          transform: none;
+        }
+      </style></noscript
+    >
+    <!-- Primera imagen visible: que empiece a bajar junto con el HTML (LCP) -->
+    <link
+      rel="preload"
+      as="image"
+      href="assets/poster/branco.webp"
+      type="image/webp"
+      fetchpriority="high"
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎷</text></svg>"
+    />
 
-  <!-- ============ HERO ============ -->
-  <header class="hero wrap" id="inicio">
-    <div class="hero__text">
-      <p class="eyebrow">Saxofonista · Show en vivo</p>
-      <h1>El saxo que <em>enciende</em> tu evento</h1>
-      <p class="hero__lead">
-        Soy Branco Martín. Hago un <strong>show solista de saxo en vivo sobre
-        pistas</strong> para casamientos, recepciones, fiestas y cumpleaños.
-        Toda la energía del saxo, sin necesidad de banda — y con sonido propio
-        si hace falta.
-      </p>
-      <div class="hero__cta">
-        <a href="#contacto" class="btn btn--gold">Contratá tu show</a>
-        <a href="#videos" class="btn btn--ghost">▶ Ver más videos</a>
+    <!-- Datos estructurados: Google entiende quién sos y qué ofrecés -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://brancomartin.github.io/#branco",
+            "name": "Branco",
+            "jobTitle": "Saxofonista",
+            "url": "https://brancomartin.github.io/",
+            "image": "https://brancomartin.github.io/assets/img/hero.jpg",
+            "email": "brancoantu9@gmail.com",
+            "sameAs": ["https://instagram.com/branco.sax"],
+            "knowsLanguage": "es-AR"
+          },
+          {
+            "@type": "MusicGroup",
+            "@id": "https://brancomartin.github.io/#show",
+            "name": "Branco — Saxofonista",
+            "description": "Show solista de saxo en vivo sobre pistas para fiestas privadas, cumpleaños, bares, eventos corporativos y casamientos. Equipo de sonido propio.",
+            "url": "https://brancomartin.github.io/",
+            "image": "https://brancomartin.github.io/assets/img/hero.jpg",
+            "genre": ["R&B", "Pop", "Soul", "Jazz"],
+            "member": { "@id": "https://brancomartin.github.io/#branco" },
+            "sameAs": ["https://instagram.com/branco.sax"],
+            "areaServed": "AR",
+            "makesOffer": {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Show de saxo en vivo para eventos",
+                "serviceType": "Música en vivo"
+              }
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://brancomartin.github.io/#web",
+            "url": "https://brancomartin.github.io/",
+            "name": "Branco — Saxofonista",
+            "inLanguage": "es-AR",
+            "about": { "@id": "https://brancomartin.github.io/#branco" }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <!-- ============ NAV ============ -->
+    <nav class="nav" id="nav">
+      <a href="#inicio" class="nav__brand">BRANCO</a>
+      <div class="nav__links" id="navLinks">
+        <a href="#inicio">Inicio</a>
+        <a href="#show">Show</a>
+        <a href="#lugares">Lugares</a>
+        <a href="#eventos">Eventos</a>
+        <a href="#videos">Videos</a>
+        <a href="#fotos">Fotos</a>
+        <a href="#contacto" class="btn btn--gold">Contratar</a>
       </div>
-      <div class="hero__feats">
-        <span><svg viewBox="0 0 24 24"><path d="M9 18V5l12-2v13" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>Show solista con pistas</span>
-        <span><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M19 5a9 9 0 0 1 0 14"/></svg>Sonido propio disponible</span>
-        <span><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>+100 shows en vivo</span>
-      </div>
-    </div>
+      <button class="nav__toggle" id="navToggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
 
-    <div class="hero__media">
-      <div class="hero__phone">
-        <video src="assets/video/branco.mp4" poster="assets/poster/branco.jpg"
-               autoplay muted loop playsinline controls preload="auto"></video>
-        <div class="hero__sound"><span class="dot"></span> Tocá para escuchar con sonido</div>
-      </div>
-      <div class="hero__badge"><b>Saxo</b><small>en vivo</small></div>
-    </div>
-  </header>
+    <main>
+      <!-- ============ HERO ============ -->
+      <header class="hero wrap" id="inicio">
+        <div class="hero__text">
+          <p class="eyebrow">Saxofonista · Artista</p>
+          <h1>Cada <em>show</em>, una experiencia.</h1>
+          <p class="hero__lead"><em>En vivo</em>, para todo tipo de eventos.</p>
 
-  <!-- ============ EL SHOW (venta principal) ============ -->
-  <section class="section" id="show">
-    <div class="wrap show">
-      <div class="show__text reveal">
-        <p class="eyebrow">El show</p>
-        <h2>Un show solista pensado para tu evento</h2>
-        <p>
-          Toco el saxo en vivo sobre pistas cuidadosamente producidas: el
-          sonido lleno de una banda, con la cercanía y la flexibilidad de un
-          solista. Leo el ambiente y adapto el repertorio a cada momento —del
-          cóctel de recepción al pico de la fiesta.
-        </p>
-        <div class="show__list">
-          <div class="feat">
-            <div class="ico"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M9 18V5l12-2v13" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div>
-            <div><h3>Solista con pistas</h3><p>Sonido completo y potente sin necesidad de contratar una banda entera.</p></div>
+          <div class="hero__cta">
+            <a href="#contacto" class="btn btn--gold">Contratar</a>
+            <a href="#videos" class="btn btn--ghost">▶ Ver videos</a>
           </div>
-          <div class="feat">
-            <div class="ico"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M8 8v8M4 11v2M16 6v12M20 9v6"/></svg></div>
-            <div><h3>Repertorio versátil</h3><p>House, pop, latino y clásicos que todos reconocen y hacen bailar.</p></div>
+          <div class="hero__feats">
+            <span
+              ><svg viewBox="0 0 24 24">
+                <path
+                  d="M9 18V5l12-2v13"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <circle cx="6" cy="18" r="3" />
+                <circle cx="18" cy="16" r="3" /></svg
+              >Solista con pistas</span
+            >
+            <span
+              ><svg
+                viewBox="0 0 24 24"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M11 5 6 9H2v6h4l5 4V5z" />
+                <path d="M15.5 8.5a5 5 0 0 1 0 7" />
+                <path d="M19 5a9 9 0 0 1 0 14" /></svg
+              >Sonido propio</span
+            >
+            <span
+              ><svg
+                viewBox="0 0 24 24"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M20 6 9 17l-5-5" /></svg
+              >Repertorio personalizado</span
+            >
           </div>
-          <div class="feat">
-            <div class="ico"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
-            <div><h3>Para cada momento</h3><p>Recepción, brindis o pista: armamos juntos el set ideal para tu evento.</p></div>
+        </div>
+
+        <div class="hero__media">
+          <div class="hero__phone">
+            <video
+              id="heroVideo"
+              src="assets/video/branco.mp4"
+              poster="assets/poster/branco.webp"
+              width="720"
+              height="1280"
+              autoplay
+              muted
+              loop
+              playsinline
+              controls
+              preload="auto"
+            ></video>
+            <button class="hero__sound" id="soundHint" type="button" hidden>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M11 5 6 9H2v6h4l5 4V5z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M16 9.5 21 15M21 9.5 16 15"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Activar sonido
+            </button>
           </div>
         </div>
-      </div>
-      <div class="show__media reveal">
-        <img src="assets/img/suit1.jpg" alt="Branco Martín tocando el saxo con traje en un evento" />
-        <div class="frame"></div>
-      </div>
-    </div>
+      </header>
 
-    <!-- Sonido propio -->
-    <div class="wrap" style="margin-top:40px">
-      <div class="strip reveal">
-        <div class="ico"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M19.5 5a9 9 0 0 1 0 14"/></svg></div>
-        <div>
-          <h3>¿El lugar no tiene sonido? Yo lo llevo.</h3>
-          <p>Cuento con equipo de sonido propio. Si el salón o el espacio no dispone de uno, no es problema: llevo todo lo necesario para que el show suene impecable.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ EVENTOS ============ -->
-  <section class="section section--soft" id="eventos">
-    <div class="wrap">
-      <div class="section__head reveal">
-        <p class="eyebrow">Para qué me contratan</p>
-        <h2>Un saxo para cada celebración</h2>
-        <p>El show solista se adapta al clima de cada evento, del más íntimo al más festivo.</p>
-      </div>
-      <div class="services reveal">
-        <div class="svc">
-          <div class="ico"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M12 21s-7-4.35-9-8.5C1.5 9 3.5 6 6.5 6 8.5 6 10 7.5 12 9.5 14 7.5 15.5 6 17.5 6c3 0 5 3 3.5 6.5C19 16.65 12 21 12 21z" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-          <h3>Casamientos & recepciones</h3>
-          <p>Ese momento mágico e íntimo en la ceremonia, el brindis o el ingreso a la fiesta.</p>
-        </div>
-        <div class="svc">
-          <div class="ico"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3c0 1 .5 2 1 3l-4 11h12l-4-11c.5-1 1-2 1-3a3 3 0 0 0-3-3z"/><path d="M8 22h8"/></svg></div>
-          <h3>Cumpleaños</h3>
-          <p>Sumo el saxo en vivo para que tu festejo sea diferente y quede en el recuerdo.</p>
-        </div>
-        <div class="svc">
-          <div class="ico"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.8 11.3 2 22l10.7-3.79"/><path d="M4 3h.01M22 8h.01M15 2h.01"/><path d="m22 2-2.24.75a2.9 2.9 0 0 0-1.96 3.12c.1.86-.57 1.63-1.45 1.63h-.38c-.86 0-1.6.6-1.76 1.44"/></svg></div>
-          <h3>Fiestas privadas</h3>
-          <p>Me sumo en vivo al DJ o toco solo sobre pistas para llevar la pista a otro nivel.</p>
-        </div>
-        <div class="svc">
-          <div class="ico"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div>
-          <h3>Eventos corporativos</h3>
-          <p>Cócteles, cenas y lanzamientos con un toque sofisticado y profesional.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ VIDEOS ============ -->
-  <section class="section" id="videos">
-    <div class="wrap">
-      <div class="section__head reveal">
-        <p class="eyebrow">En acción</p>
-        <h2>Más videos en vivo</h2>
-        <p>Tocá play y mirá cómo suena y se vive el show en distintos eventos.</p>
-      </div>
-      <div class="video-grid reveal">
-        <div class="vcard portrait"><video src="assets/video/evento1.mp4" poster="assets/poster/evento1.jpg" playsinline preload="none" muted loop></video><div class="play"><svg viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></div></div>
-        <div class="vcard portrait"><video src="assets/video/evento2.mp4" poster="assets/poster/evento2.jpg" playsinline preload="none" muted loop></video><div class="play"><svg viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></div></div>
-        <div class="vcard landscape"><video src="assets/video/citycenter.mp4" poster="assets/poster/citycenter.jpg" playsinline preload="none" muted loop></video><div class="play"><svg viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></div></div>
-        <div class="vcard portrait"><video src="assets/video/evento3.mp4" poster="assets/poster/evento3.jpg" playsinline preload="none" muted loop></video><div class="play"><svg viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></div></div>
-        <div class="vcard portrait"><video src="assets/video/evento5.mp4" poster="assets/poster/evento5.jpg" playsinline preload="none" muted loop></video><div class="play"><svg viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></div></div>
-        <div class="vcard landscape"><video src="assets/video/evento4.mp4" poster="assets/poster/evento4.jpg" playsinline preload="none" muted loop></video><div class="play"><svg viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></div></div>
-        <div class="vcard landscape"><video src="assets/video/frank.mp4" poster="assets/poster/frank.jpg" playsinline preload="none" muted loop></video><div class="play"><svg viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ GALERÍA ============ -->
-  <section class="section section--soft" id="galeria">
-    <div class="wrap">
-      <div class="section__head reveal">
-        <p class="eyebrow">Momentos</p>
-        <h2>Galería</h2>
-        <p>Del club al salón de fiestas: el saxo se adapta a cualquier escenario.</p>
-      </div>
-      <div class="gallery reveal">
-        <figure><img src="assets/img/suit2.jpg" alt="Branco tocando el saxo de traje sobre el escenario" loading="lazy" /></figure>
-        <figure><img src="assets/img/club1.jpg" alt="Branco tocando en un bar con luces violetas" loading="lazy" /></figure>
-        <figure><img src="assets/img/zenobia.jpg" alt="Branco tocando el saxo en el escenario de Zenobia" loading="lazy" /></figure>
-        <figure><img src="assets/img/hero.jpg" alt="Branco iluminado por las luces del escenario tocando saxo" loading="lazy" /></figure>
-        <figure><img src="assets/img/suit1.jpg" alt="Branco tocando el saxo de traje en un evento" loading="lazy" /></figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ BANDAS (apartado secundario) ============ -->
-  <section class="section" id="bandas">
-    <div class="wrap band">
-      <div class="band__vid reveal">
-        <video src="assets/video/banda.mp4" poster="assets/poster/banda.jpg" controls playsinline preload="none"></video>
-      </div>
-      <div class="reveal">
-        <p class="eyebrow">También con banda</p>
-        <h2>Bandas</h2>
-        <p>
-          Además del show solista, sumo mi saxo a proyectos con banda y músicos
-          en vivo para eventos más grandes o propuestas puntuales.
-        </p>
-        <p>¿Tenés algo así en mente? Escribime y lo armamos.</p>
-        <a href="#contacto" class="btn btn--ghost" style="margin-top:10px">Consultar</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ CONTACTO ============ -->
-  <section class="section section--soft" id="contacto">
-    <div class="wrap contact">
-      <div class="contact__info reveal">
-        <p class="eyebrow">Contacto</p>
-        <h2>Hagamos que suene</h2>
-        <p>Contame de tu evento y armamos el show perfecto. Respondo rápido por WhatsApp.</p>
-        <div class="contact__list">
-          <a class="cline" id="waLine" href="#" target="_blank" rel="noopener">
-            <span class="ci"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></span>
-            <div><small>WhatsApp</small><b>Escribime directo</b></div>
-          </a>
-          <a class="cline" id="emailLine" href="#">
-            <span class="ci"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg></span>
-            <div><small>Email</small><b>brancoantu9@gmail.com</b></div>
-          </a>
-          <a class="cline" id="igLine" href="#" target="_blank" rel="noopener">
-            <span class="ci"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg></span>
-            <div><small>Instagram</small><b>@branco.sax</b></div>
-          </a>
-        </div>
-      </div>
-
-      <form class="form reveal" id="contactForm">
-        <div class="row">
-          <div class="field"><label for="nombre">Nombre</label><input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required /></div>
-          <div class="field"><label for="tel">Teléfono</label><input id="tel" name="tel" type="tel" placeholder="Opcional" /></div>
-        </div>
-        <div class="row">
-          <div class="field">
-            <label for="tipo">Tipo de evento</label>
-            <select id="tipo" name="tipo">
-              <option>Casamiento / Recepción</option>
-              <option>Cumpleaños</option>
-              <option>Fiesta privada</option>
-              <option>Evento corporativo</option>
-              <option>Otro</option>
-            </select>
+      <!-- ============ EL SHOW ============ -->
+      <section class="section" id="show">
+        <div class="wrap show">
+          <div class="show__media reveal">
+            <img
+              src="assets/img/suit1.webp"
+              alt="Branco tocando el saxo con traje en un evento"
+              width="1000"
+              height="1844"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="frame"></div>
           </div>
-          <div class="field"><label for="fecha">Fecha</label><input id="fecha" name="fecha" type="date" /></div>
+          <div class="show__text reveal">
+            <p class="eyebrow">Show</p>
+            <h2>Adaptado a cada clima</h2>
+            <div class="show__list">
+              <div class="feat">
+                <div class="ico">
+                  <svg viewBox="0 0 24 24" stroke-width="2">
+                    <path
+                      d="M9 18V5l12-2v13"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <circle cx="6" cy="18" r="3" />
+                    <circle cx="18" cy="16" r="3" />
+                  </svg>
+                </div>
+                <h3>Saxo en vivo con pistas</h3>
+              </div>
+              <div class="feat">
+                <div class="ico">
+                  <svg
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M12 3v18M8 8v8M4 11v2M16 6v12M20 9v6" />
+                  </svg>
+                </div>
+                <h3>R&B, Pop, Soul y clásicos</h3>
+              </div>
+              <div class="feat">
+                <div class="ico">
+                  <svg
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M11 5 6 9H2v6h4l5 4V5z" />
+                    <path d="M15.5 8.5a5 5 0 0 1 0 7" />
+                    <path d="M19.5 5a9 9 0 0 1 0 14" />
+                  </svg>
+                </div>
+                <h3>Equipo de sonido propio</h3>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="field"><label for="msg">Mensaje</label><textarea id="msg" name="msg" placeholder="Contame sobre tu evento: lugar, horario, si necesitás sonido..."></textarea></div>
-        <button type="submit" class="btn btn--wa">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20z"/></svg>
-          Enviar por WhatsApp
-        </button>
-        <p class="form__note">Se abrirá WhatsApp con tu mensaje listo para enviar.</p>
-      </form>
-    </div>
-  </section>
+      </section>
 
-  <!-- ============ FOOTER ============ -->
-  <footer class="footer">
-    <div class="wrap">
-      <div class="footer__top">
-        <div class="footer__brand">Branco<span>.</span>Martín</div>
-        <div class="footer__soc">
-          <a id="footWa" href="#" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a>
-          <a id="footIg" href="#" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg></a>
-          <a href="mailto:brancoantu9@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg></a>
+      <!-- ============ LUGARES ============ -->
+      <section class="section section--soft" id="lugares">
+        <div class="wrap">
+          <div class="section__head section__head--center reveal">
+            <p class="eyebrow">Lugares</p>
+            <h2>City Center</h2>
+          </div>
+          <div class="feature-vid reveal">
+            <video
+              src="assets/video/citycenter.mp4"
+              poster="assets/poster/citycenter.webp"
+              controls
+              playsinline
+              preload="none"
+            ></video>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ EVENTOS ============ -->
+      <section class="section" id="eventos">
+        <div class="wrap">
+          <div class="section__head section__head--center reveal">
+            <p class="eyebrow">Previa</p>
+            <h2>EVENTOS</h2>
+          </div>
+          <div class="feature-vid reveal">
+            <video
+              src="assets/video/frank.mp4"
+              poster="assets/poster/frank.webp"
+              controls
+              playsinline
+              preload="none"
+            ></video>
+          </div>
+          <div class="pills reveal">
+            <span>Bares</span>
+            <span>Cumpleaños</span>
+            <span>Fiestas privadas</span>
+            <span>Corporativos</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ VIDEOS (carrusel) ============ -->
+      <section class="section section--soft" id="videos">
+        <div class="wrap">
+          <div class="section__head section__head--center reveal">
+            <p class="eyebrow">Videos</p>
+            <h2>Más en vivo</h2>
+          </div>
+
+          <div class="carousel reveal" data-carousel>
+            <button
+              class="carousel__btn carousel__btn--prev"
+              data-dir="-1"
+              aria-label="Anterior"
+            >
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M15 5 8 12l7 7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+
+            <div
+              class="carousel__track"
+              tabindex="0"
+              role="region"
+              aria-label="Carrusel de videos"
+            >
+              <div class="vslide portrait" role="button" tabindex="0" aria-label="Reproducir video">
+                <video
+                  src="assets/video/evento1.mp4"
+                  poster="assets/poster/evento1.webp"
+                  playsinline
+                  preload="none"
+                  muted
+                  loop
+                ></video>
+                <div class="play">
+                  <svg viewBox="0 0 24 24" fill="#fff">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              </div>
+              <div class="vslide portrait" role="button" tabindex="0" aria-label="Reproducir video">
+                <video
+                  src="assets/video/evento2.mp4"
+                  poster="assets/poster/evento2.webp"
+                  playsinline
+                  preload="none"
+                  muted
+                  loop
+                ></video>
+                <div class="play">
+                  <svg viewBox="0 0 24 24" fill="#fff">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              </div>
+              <div class="vslide portrait" role="button" tabindex="0" aria-label="Reproducir video">
+                <video
+                  src="assets/video/evento3.mp4"
+                  poster="assets/poster/evento3.webp"
+                  playsinline
+                  preload="none"
+                  muted
+                  loop
+                ></video>
+                <div class="play">
+                  <svg viewBox="0 0 24 24" fill="#fff">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              </div>
+              <div class="vslide portrait" role="button" tabindex="0" aria-label="Reproducir video">
+                <video
+                  src="assets/video/evento5.mp4"
+                  poster="assets/poster/evento5.webp"
+                  playsinline
+                  preload="none"
+                  muted
+                  loop
+                ></video>
+                <div class="play">
+                  <svg viewBox="0 0 24 24" fill="#fff">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              </div>
+              <div class="vslide portrait" role="button" tabindex="0" aria-label="Reproducir video">
+                <video
+                  src="assets/video/evento4.mp4"
+                  poster="assets/poster/evento4.webp"
+                  playsinline
+                  preload="none"
+                  muted
+                  loop
+                ></video>
+                <div class="play">
+                  <svg viewBox="0 0 24 24" fill="#fff">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              </div>
+              <div class="vslide portrait" role="button" tabindex="0" aria-label="Reproducir video">
+                <video
+                  src="assets/video/banda.mp4"
+                  poster="assets/poster/banda.webp"
+                  playsinline
+                  preload="none"
+                  muted
+                  loop
+                ></video>
+                <div class="play">
+                  <svg viewBox="0 0 24 24" fill="#fff">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+                <span class="vslide__tag">Con banda</span>
+              </div>
+            </div>
+
+            <button
+              class="carousel__btn carousel__btn--next"
+              data-dir="1"
+              aria-label="Siguiente"
+            >
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="m9 5 7 7-7 7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ FOTOS (carrusel) ============ -->
+      <section class="section" id="fotos">
+        <div class="wrap">
+          <div class="section__head section__head--center reveal">
+            <p class="eyebrow">Fotos</p>
+            <h2>Momentos</h2>
+          </div>
+
+          <div class="carousel reveal" data-carousel>
+            <button
+              class="carousel__btn carousel__btn--prev"
+              data-dir="-1"
+              aria-label="Anterior"
+            >
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M15 5 8 12l7 7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+
+            <div
+              class="carousel__track"
+              tabindex="0"
+              role="region"
+              aria-label="Carrusel de fotos"
+            >
+              <figure class="pslide" role="button" tabindex="0" aria-label="Ampliar foto">
+                <img
+                  src="assets/img/suit2.webp"
+                  width="1000"
+                  height="1332"
+                  decoding="async"
+                  alt="Branco tocando el saxo de traje sobre el escenario"
+                  loading="lazy"
+                />
+              </figure>
+              <figure class="pslide" role="button" tabindex="0" aria-label="Ampliar foto">
+                <img
+                  src="assets/img/club1.webp"
+                  width="1000"
+                  height="1332"
+                  decoding="async"
+                  alt="Branco tocando en un bar con luces violetas"
+                  loading="lazy"
+                />
+              </figure>
+              <figure class="pslide" role="button" tabindex="0" aria-label="Ampliar foto">
+                <img
+                  src="assets/img/zenobia.webp"
+                  width="1000"
+                  height="1500"
+                  decoding="async"
+                  alt="Branco tocando el saxo en el escenario de Zenobia"
+                  loading="lazy"
+                />
+              </figure>
+              <figure class="pslide" role="button" tabindex="0" aria-label="Ampliar foto">
+                <img
+                  src="assets/img/hero.webp"
+                  width="1000"
+                  height="1500"
+                  decoding="async"
+                  alt="Branco iluminado por las luces del escenario tocando saxo"
+                  loading="lazy"
+                />
+              </figure>
+              <figure class="pslide" role="button" tabindex="0" aria-label="Ampliar foto">
+                <img
+                  src="assets/img/suit1.webp"
+                  width="1000"
+                  height="1844"
+                  decoding="async"
+                  alt="Branco tocando el saxo de traje en un evento"
+                  loading="lazy"
+                />
+              </figure>
+            </div>
+
+            <button
+              class="carousel__btn carousel__btn--next"
+              data-dir="1"
+              aria-label="Siguiente"
+            >
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="m9 5 7 7-7 7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CONTACTO ============ -->
+      <section class="section section--soft" id="contacto">
+        <div class="wrap contact">
+          <div class="contact__info reveal">
+            <p class="eyebrow">Contacto</p>
+            <h2>Creá tu evento como te lo imaginas</h2>
+            <div class="contact__list">
+              <a
+                class="cline"
+                id="waLine"
+                href="#"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="ci"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+                    /></svg
+                ></span>
+                <div><small>WhatsApp</small><b>Escribime directo</b></div>
+              </a>
+              <a class="cline" id="emailLine" href="#">
+                <span class="ci"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                    <path d="m22 7-10 5L2 7" /></svg
+                ></span>
+                <div><small>Email</small><b>brancoantu9@gmail.com</b></div>
+              </a>
+              <a
+                class="cline"
+                id="igLine"
+                href="#"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="ci"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect x="2" y="2" width="20" height="20" rx="5" />
+                    <circle cx="12" cy="12" r="4" />
+                    <path d="M17.5 6.5h.01" /></svg
+                ></span>
+                <div><small>Instagram</small><b>@branco.sax</b></div>
+              </a>
+            </div>
+          </div>
+
+          <form class="form reveal" id="contactForm">
+            <div class="row">
+              <div class="field">
+                <label for="nombre">Nombre</label
+                ><input
+                  id="nombre"
+                  name="nombre"
+                  type="text"
+                  autocomplete="name"
+                  placeholder="Tu nombre"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="tel">Teléfono</label
+                ><input id="tel" name="tel" type="tel" autocomplete="tel" placeholder="Opcional" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="field">
+                <label for="tipo">Tipo de evento</label>
+                <select id="tipo" name="tipo">
+                  <option>Fiesta privada</option>
+                  <option>Piano bar</option>
+                  <option>Cumpleaños</option>
+                  <option>Evento corporativo</option>
+                  <option>Casamiento / Recepción</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="fecha">Fecha</label
+                ><input id="fecha" name="fecha" type="date" />
+              </div>
+            </div>
+            <div class="field">
+              <label for="msg">Mensaje</label
+              ><textarea
+                id="msg"
+                name="msg"
+                placeholder="Lugar, horario, si necesitás sonido..."
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn--wa">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="#fff">
+                <path
+                  d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20z"
+                />
+              </svg>
+              Enviar por WhatsApp
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="wrap">
+        <div class="footer__top">
+          <div class="footer__brand"><span>Branco</span></div>
+          <div class="footer__soc">
+            <a
+              id="footWa"
+              href="#"
+              target="_blank"
+              rel="noopener"
+              aria-label="WhatsApp"
+              ><svg
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+                /></svg
+            ></a>
+            <a
+              id="footIg"
+              href="#"
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram"
+              ><svg
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <path d="M17.5 6.5h.01" /></svg
+            ></a>
+            <a href="mailto:brancoantu9@gmail.com" aria-label="Email"
+              ><svg
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="m22 7-10 5L2 7" /></svg
+            ></a>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <span>© <span id="year"></span> Branco · Saxofonista</span>
+          <span>Saxo en vivo para tus eventos 🎷</span>
         </div>
       </div>
-      <div class="footer__bottom">
-        <span>© <span id="year"></span> Branco Martín · Saxofonista</span>
-        <span>Show de saxo en vivo para tus eventos 🎷</span>
-      </div>
+    </footer>
+
+    <!-- WhatsApp flotante -->
+    <a
+      class="wa-float"
+      id="waFloat"
+      href="#"
+      target="_blank"
+      rel="noopener"
+      aria-label="WhatsApp"
+    >
+      <svg viewBox="0 0 24 24">
+        <path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2z" />
+      </svg>
+    </a>
+
+    <!-- Lightbox -->
+    <div
+      class="lightbox"
+      id="lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Foto ampliada"
+    >
+      <button class="lightbox__close" id="lbClose" aria-label="Cerrar">
+        &times;
+      </button>
+      <img alt="" id="lbImg" />
     </div>
-  </footer>
 
-  <!-- WhatsApp flotante -->
-  <a class="wa-float" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="WhatsApp">
-    <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2z"/></svg>
-  </a>
-
-  <!-- Lightbox -->
-  <div class="lightbox" id="lightbox">
-    <button class="lightbox__close" id="lbClose" aria-label="Cerrar">&times;</button>
-    <img src="" alt="" id="lbImg" />
-  </div>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

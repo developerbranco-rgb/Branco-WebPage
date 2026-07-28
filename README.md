@@ -1,4 +1,4 @@
-# 🎷 Branco Martín — Portfolio Saxofonista
+# 🎷 Branco — Portfolio Saxofonista
 
 Landing page / portfolio para mostrar mi trabajo como saxofonista y recibir
 contrataciones para casamientos, eventos corporativos, fiestas y bares.
@@ -28,11 +28,17 @@ El botón flotante, el formulario y los enlaces de contacto se actualizan solos.
 index.html      → la página
 styles.css      → estilos
 script.js       → interacción + configuración de contacto
+robots.txt      → permiso de indexado + ubicación del sitemap
+sitemap.xml     → mapa del sitio para Google
 assets/
-  img/          → fotos optimizadas
-  video/        → videos optimizados para web (H.264 .mp4)
-  poster/       → miniaturas de los videos
+  img/          → fotos (.webp para la web, .jpg de respaldo / redes)
+  video/        → videos optimizados para web (H.264 .mp4, faststart)
+  poster/       → miniaturas de los videos (.webp)
 ```
+
+> La URL del sitio aparece en `index.html` (canonical, Open Graph y datos
+> estructurados), en `robots.txt` y en `sitemap.xml`. Si publicás en otro
+> dominio, cambiala en esos tres archivos.
 
 Los videos y fotos originales viven fuera del repo (en OneDrive) para mantenerlo liviano.
 
