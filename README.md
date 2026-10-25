@@ -2,7 +2,7 @@
 
 Carta de presentación para bares, eventos, empresas y festivales.
 
-**Sitio en vivo:** https://developerbranco-rgb.github.io
+**Sitio en vivo:** https://developerbranco-rgb.github.io/Branco-WebPage/
 
 ## ➕ Cómo agregar videos (lo único que vas a hacer seguido)
 

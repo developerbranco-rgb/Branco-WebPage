@@ -24,7 +24,7 @@ ROOT = Path(__file__).resolve().parent.parent
 TPL = Path(__file__).resolve().parent / "plantillas"
 
 # Si cambiás de dominio, cambialo solo acá.
-SITE_URL = "https://developerbranco-rgb.github.io/"
+SITE_URL = "https://developerbranco-rgb.github.io/Branco-WebPage/"
 
 # Páginas conocidas (en el orden del menú). "carpeta" = nombre de la carpeta en videos/
 PAGINAS = [

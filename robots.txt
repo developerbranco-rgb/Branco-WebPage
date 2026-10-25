@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://developerbranco-rgb.github.io/sitemap.xml
+Sitemap: https://developerbranco-rgb.github.io/Branco-WebPage/sitemap.xml
