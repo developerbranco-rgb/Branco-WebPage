@@ -29,6 +29,14 @@ SITE_URL = "https://developerbranco-rgb.github.io/Branco-WebPage/"
 # Páginas conocidas (en el orden del menú). "carpeta" = nombre de la carpeta en videos/
 PAGINAS = [
     {
+        "carpeta": "solista en bares", "slug": "solista-en-bares", "menu": "Solista en Bares",
+        "modo": "lugares",
+        "titulo": "Solista en Bares",
+        "eyebrow": "Saxo en vivo en tu bar",
+        "intro": "El show solista de saxo en bares y pubs: música en vivo que acompaña la noche y llena el lugar.",
+        "desc": "Branco, saxofonista solista en bares y pubs. Videos en vivo de cada lugar.",
+    },
+    {
         "carpeta": "lugares", "slug": "lugares", "menu": "Lugares", "modo": "lugares",
         "titulo": "Lugares",
         "eyebrow": "Dónde toqué",
@@ -113,7 +121,7 @@ def fmt_dur(sec):
 
 
 SIN_TITULO = re.compile(
-    r"^(img|vid|dsc|pxl|mov|video)[ _-]?\d+$|^[0-9a-f]{8}-[0-9a-f-]{20,}$|^eventos?( ?\(\d+\))?$",
+    r"^(img|vid|dsc|pxl|mov|video)[ _-]?\d+$|^[0-9a-f]{8}-[0-9a-f-]{20,}$|^[0-9a-f]{16,}$|^eventos?( ?\(\d+\))?$",
     re.I,
 )
 
@@ -185,11 +193,12 @@ def armar_lugares(vs, aj):
                 m = re.search(r"(?:^|\s|[a-z])[Ee]n\s*([A-ZÁÉÍÓÚÑ].*)$", pretty(v["stem"]))
                 place = aj.nombre(m[1]) if m else aj.nombre(v["stem"])
         auto = auto_title(v["stem"])
-        if auto.lower() == place.lower():
+        if re.sub(r"^en\s+", "", auto.lower()) == place.lower():
             auto = ""
         v["titulo"] = aj.titulo(v["stem"], auto)
         groups.setdefault(place, []).append(v)
-    return [{"titulo": "", "grupos": [group(k, groups[k]) for k in sorted(groups, key=natural_key)]}]
+    keys = sorted(groups, key=lambda k: (k.startswith("Otros"), natural_key(k)))
+    return [{"titulo": "", "grupos": [group(k, groups[k]) for k in keys]}]
 
 
 def armar_simple(vs, aj):
@@ -213,7 +222,7 @@ def armar_juegos(vs, aj):
         t = re.sub(r"[-\s]*ENTERO.*$", "", stem, flags=re.I)
         t = re.sub(r"\bUNA PARTE\b", "", t, flags=re.I)
         t = DIA.sub("", t)
-        v["titulo"] = aj.titulo(stem, pretty(t))
+        v["titulo"] = aj.titulo(stem, "" if SIN_TITULO.match(stem.strip()) else pretty(t))
         if entero:
             m = DIA.search(stem)
             dias.setdefault(int(m[1]) if m else 0, []).append(v)
@@ -266,8 +275,9 @@ def armar_bandas(vs, aj):
     for v in vs:
         band = aj.nombre(v["parts"][0]) if v["parts"] else ""
         auto = auto_title(v["stem"])
-        if auto.lower() == band.lower():
-            auto = ""
+        if band and auto.lower().startswith(band.lower()):
+            auto = auto[len(band):].strip(" -·")
+            auto = auto[:1].upper() + auto[1:]
         v["titulo"] = aj.titulo(v["stem"], auto)
         groups.setdefault(band, []).append(v)
     keys = sorted(groups, key=lambda k: (k == "", natural_key(k)))
@@ -309,6 +319,11 @@ def armar_paginas(medios, aj):
         p["cover"] = cover or p["videos"][0]
         p["grupos_n"] = sum(1 for s in p["secciones"] for g in s["grupos"] if g["titulo"])
     return paginas
+
+
+def es_lugar(titulo):
+    """Los grupos genéricos ("Más shows", "Otros bares") no cuentan como lugar."""
+    return bool(titulo) and not titulo.startswith(("Más ", "Otros", "Otras"))
 
 
 # ---------------------------------------------------------------- HTML
@@ -375,11 +390,23 @@ def render_secciones(p):
             parts.append(
                 f'<header class="block__head reveal" id="{sid}"><h2>{esc(s["titulo"])}</h2>{intro}</header>'
             )
+        # Grupos con un solo video: van juntos en una grilla, con el nombre
+        # arriba de cada video (así no queda una fila casi vacía por lugar).
+        singles = [g for g in s["grupos"] if g["titulo"] and len(g["items"]) == 1]
+        if len(singles) < 2:
+            singles = []
+        singles_done = False
         for g in s["grupos"]:
             n = len(g["items"])
+            gid = ""
             if g["titulo"]:
                 gid = slug((s.get("id") or "") + "-" + g["titulo"]) if s.get("titulo") else slug(g["titulo"])
                 chips.append((gid, g["titulo"], False))
+            if g in singles:
+                if not singles_done:
+                    parts.append(render_singles(s, singles))
+                    singles_done = True
+            elif g["titulo"]:
                 sub = g["sub"] or f"{n} {'video' if n == 1 else 'videos'}"
                 tag = "h3" if s.get("titulo") else "h2"
                 parts.append(
@@ -391,6 +418,21 @@ def render_secciones(p):
                 parts.append(f'<section class="group reveal">{grids(g["items"])}</section>')
         html_out.append('<div class="block">' + "\n".join(parts) + "</div>")
     return "\n".join(html_out), chips
+
+
+def render_singles(s, singles):
+    def labeled(g):
+        gid = slug((s.get("id") or "") + "-" + g["titulo"]) if s.get("titulo") else slug(g["titulo"])
+        return (f'<div class="lcard" id="{gid}"><h3 class="lcard__name">{esc(g["titulo"])}</h3>'
+                f'{card(g["items"][0])}</div>')
+    hs = [g for g in singles if g["items"][0]["w"] > g["items"][0]["h"]]
+    vs = [g for g in singles if g not in hs]
+    out = []
+    if hs:
+        out.append('<div class="vgrid vgrid--h">' + "".join(labeled(g) for g in hs) + "</div>")
+    if vs:
+        out.append('<div class="vgrid vgrid--v">' + "".join(labeled(g) for g in vs) + "</div>")
+    return '<section class="group group--singles reveal">' + "\n".join(out) + "</section>"
 
 
 def render_subnav(chips):
@@ -407,7 +449,7 @@ def stats_line(p):
     s = [f"{n} {'video' if n == 1 else 'videos'}"]
     g = p["grupos_n"]
     if p["modo"] in ("lugares", "dopashock") and g:
-        real = sum(1 for sec in p["secciones"] for gr in sec["grupos"] if gr["titulo"] and gr["titulo"] != "Más shows")
+        real = sum(1 for sec in p["secciones"] for gr in sec["grupos"] if es_lugar(gr["titulo"]))
         if real:
             s.append(f"{real} {'lugar' if real == 1 else 'lugares'}")
     if p["modo"] == "bandas" and g:
@@ -491,6 +533,16 @@ def render_pagina(p, paginas, medios):
     )
 
 
+def xcols(n):
+    """Columnas para las tarjetas del inicio, sin dejar una sola en la última fila."""
+    if n <= 5:
+        return n
+    for c in (4, 3, 5):
+        if n % c == 0:
+            return c
+    return 4 if n % 4 >= 2 else 3
+
+
 def render_inicio(paginas, medios):
     cards = []
     for p in paginas:
@@ -514,7 +566,7 @@ def render_inicio(paginas, medios):
     total = sum(p["n"] for p in paginas)
     lugares = sum(
         1 for p in paginas if p["modo"] in ("lugares", "dopashock")
-        for s in p["secciones"] for g in s["grupos"] if g["titulo"] and g["titulo"] != "Más shows"
+        for s in p["secciones"] for g in s["grupos"] if es_lugar(g["titulo"])
     )
     bandas = sum(
         1 for p in paginas if p["modo"] == "bandas"
@@ -531,6 +583,7 @@ def render_inicio(paginas, medios):
     t = (TPL / "inicio.html").read_text(encoding="utf-8")
     rep = {
         "{{EXPLORAR}}": "\n".join(cards),
+        "{{XCOLS}}": str(xcols(len(cards))),
         "{{FOTOS}}": slides,
         "{{STATS}}": stats_html,
         "{{DOPA_IMG}}": esc(dopa_img),

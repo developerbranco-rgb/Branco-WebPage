@@ -9,6 +9,15 @@
    "size": 175285460,
    "mb": 4.1
   },
+  "bandas/FUNKLOPA/FUNKLOPA EN HARLEM PUB.MP4": {
+   "src": "media/bandas/funklopa/funklopa-en-harlem-pub.mp4",
+   "poster": "media/bandas/funklopa/funklopa-en-harlem-pub.webp",
+   "w": 576,
+   "h": 1024,
+   "dur": 53.5,
+   "size": 3819828,
+   "mb": 5.8
+  },
   "bandas/FUNKLOPA/FUNKLOPA.mp4": {
    "src": "media/bandas/funklopa/funklopa.mp4",
    "poster": "media/bandas/funklopa/funklopa.webp",
@@ -80,6 +89,15 @@
    "dur": 60.9,
    "size": 93330221,
    "mb": 11.0
+  },
+  "DopaShock/DOPASHOCK EN MISTICA.MP4": {
+   "src": "media/dopashock/dopashock-en-mistica.mp4",
+   "poster": "media/dopashock/dopashock-en-mistica.webp",
+   "w": 576,
+   "h": 1024,
+   "dur": 96.5,
+   "size": 7779207,
+   "mb": 10.9
   },
   "DopaShock/LA MONA GIMENEZ DOPASHOCK.mp4": {
    "src": "media/dopashock/la-mona-gimenez-dopashock.mp4",
@@ -261,6 +279,24 @@
    "size": 117007074,
    "mb": 9.8
   },
+  "Juegos suramericanos/f4a34331bbb18ca47d85cae022716f8d20261001210835.MP4": {
+   "src": "media/juegos-suramericanos/f4a34331bbb18ca47d85cae022716f8d20261001210835.mp4",
+   "poster": "media/juegos-suramericanos/f4a34331bbb18ca47d85cae022716f8d20261001210835.webp",
+   "w": 720,
+   "h": 1280,
+   "dur": 16.4,
+   "size": 38390717,
+   "mb": 3.9
+  },
+  "Juegos suramericanos/Final de “a mi manera” en los juegos suramericanos día 1....#juegossuramericanos #musica #mariam.mp4": {
+   "src": "media/juegos-suramericanos/final-de-a-mi-manera-en-los-juegos-suramericanos-dia-1-juego.mp4",
+   "poster": "media/juegos-suramericanos/final-de-a-mi-manera-en-los-juegos-suramericanos-dia-1-juego.webp",
+   "w": 720,
+   "h": 1280,
+   "dur": 16.4,
+   "size": 8502297,
+   "mb": 4.0
+  },
   "Juegos suramericanos/GET LUCKY UNA PARTE.mp4": {
    "src": "media/juegos-suramericanos/get-lucky-una-parte.mp4",
    "poster": "media/juegos-suramericanos/get-lucky-una-parte.webp",
@@ -315,6 +351,15 @@
    "size": 433736296,
    "mb": 40.0
   },
+  "Juegos suramericanos/Un pedacito de “September” en los juegos suramericanos día 2. PH. @pasajeraentrance.ph @paulusba.mp4": {
+   "src": "media/juegos-suramericanos/un-pedacito-de-september-en-los-juegos-suramericanos-dia-2-p.mp4",
+   "poster": "media/juegos-suramericanos/un-pedacito-de-september-en-los-juegos-suramericanos-dia-2-p.webp",
+   "w": 720,
+   "h": 1280,
+   "dur": 15.4,
+   "size": 3646134,
+   "mb": 3.1
+  },
   "Juegos suramericanos/You know i´m no good - ENTEROen los juegos suramericanos dia 3.mp4": {
    "src": "media/juegos-suramericanos/you-know-i-m-no-good-enteroen-los-juegos-suramericanos-dia-3.mp4",
    "poster": "media/juegos-suramericanos/you-know-i-m-no-good-enteroen-los-juegos-suramericanos-dia-3.webp",
@@ -359,6 +404,42 @@
    "dur": 4.6,
    "size": 8727882,
    "mb": 0.9
+  },
+  "Solista en Bares/BEAT MEMO.MP4": {
+   "src": "media/solista-en-bares/beat-memo.mp4",
+   "poster": "media/solista-en-bares/beat-memo.webp",
+   "w": 576,
+   "h": 1024,
+   "dur": 26.8,
+   "size": 2546575,
+   "mb": 4.7
+  },
+  "Solista en Bares/en GALLO ROJO.MP4": {
+   "src": "media/solista-en-bares/en-gallo-rojo.mp4",
+   "poster": "media/solista-en-bares/en-gallo-rojo.webp",
+   "w": 576,
+   "h": 1024,
+   "dur": 170.3,
+   "size": 22397271,
+   "mb": 18.4
+  },
+  "Solista en Bares/en HARLEM PUB.MP4": {
+   "src": "media/solista-en-bares/en-harlem-pub.mp4",
+   "poster": "media/solista-en-bares/en-harlem-pub.webp",
+   "w": 576,
+   "h": 1024,
+   "dur": 163.3,
+   "size": 11119368,
+   "mb": 9.0
+  },
+  "Solista en Bares/en VINITO ROSARIO.MP4": {
+   "src": "media/solista-en-bares/en-vinito-rosario.mp4",
+   "poster": "media/solista-en-bares/en-vinito-rosario.webp",
+   "w": 576,
+   "h": 1024,
+   "dur": 103.8,
+   "size": 12409985,
+   "mb": 10.2
   }
  },
  "fotos": {

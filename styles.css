@@ -649,3 +649,23 @@ main, .footer { overflow-x: clip; }
   }
   .strip__list li + li::before { display: none; }
 }
+
+/* ---------- Tarjetas con nombre arriba (lugares/bandas con un solo video) ---------- */
+.group--singles .vgrid--v { grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); }
+.lcard { display: flex; flex-direction: column; gap: 10px; min-width: 0; scroll-margin-top: calc(var(--nav-h) + 70px); }
+.lcard__name {
+  font-size: 1.15rem; padding-bottom: 8px; border-bottom: 1px solid var(--line);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.lcard__name::before {
+  content: ""; display: inline-block; width: 8px; height: 8px; border-radius: 50%;
+  background: var(--gold); margin-right: 10px; vertical-align: middle; transform: translateY(-2px);
+  box-shadow: 0 0 12px var(--gold);
+}
+@media (min-width: 961px) {
+  .xgrid { grid-template-columns: repeat(var(--cols, 4), 1fr); }
+}
+@media (max-width: 700px) {
+  .group--singles .vgrid--v { grid-template-columns: repeat(2, 1fr); }
+  .lcard__name { font-size: 1rem; }
+}
