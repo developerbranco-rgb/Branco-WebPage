@@ -71,7 +71,10 @@ const CONFIG = {
         const chip = byId.get(e.target.id);
         if (!chip) return;
         chips.forEach((c) => c.classList.toggle("active", c === chip));
-        chip.scrollIntoView({ block: "nearest", inline: "center", behavior: "smooth" });
+        // Centrar el botón activo moviendo SOLO la barra (no la página).
+        const bar = chip.parentElement;
+        const offset = chip.getBoundingClientRect().left - bar.getBoundingClientRect().left;
+        bar.scrollTo({ left: bar.scrollLeft + offset - (bar.clientWidth - chip.offsetWidth) / 2, behavior: "smooth" });
       }),
       { rootMargin: "-45% 0px -50% 0px" }
     );
