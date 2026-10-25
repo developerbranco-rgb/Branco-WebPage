@@ -1,0 +1,77 @@
+<!doctype html>
+<!-- generado por tools/generar_paginas.py -->
+<!-- NO editar este archivo a mano: se pisa al correr actualizar.bat.
+     Editá tools/plantillas/*.html o tools/generar_paginas.py -->
+<html lang="es-AR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>{{TITLE}}</title>
+    <meta name="description" content="{{DESC}}" />
+    <meta name="theme-color" content="#0f0d0c" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="{{URL}}" />
+
+    <meta property="og:site_name" content="Branco — Saxofonista" />
+    <meta property="og:title" content="{{TITLE}}" />
+    <meta property="og:description" content="{{DESC}}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_AR" />
+    <meta property="og:url" content="{{URL}}" />
+    <meta property="og:image" content="{{IMAGE}}" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icon-32.png" />
+    <link rel="apple-touch-icon" href="assets/icon-180.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,600&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <noscript><style>.reveal { opacity: 1; transform: none; }</style></noscript>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "{{SITE}}#branco",
+            "name": "Branco",
+            "jobTitle": "Saxofonista",
+            "url": "{{SITE}}",
+            "image": "{{SITE}}assets/img/hero.jpg",
+            "email": "brancoantu9@gmail.com",
+            "sameAs": ["https://instagram.com/branco.sax"]
+          },
+          {
+            "@type": "MusicGroup",
+            "@id": "{{SITE}}#show",
+            "name": "Branco — Saxofonista",
+            "description": "Show de saxo en vivo para bares, eventos privados, empresas y festivales.",
+            "url": "{{SITE}}",
+            "image": "{{SITE}}assets/img/hero.jpg",
+            "genre": ["Pop", "R&B", "Soul", "Electrónica", "Jazz"],
+            "member": { "@id": "{{SITE}}#branco" },
+            "areaServed": "AR"
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body class="{{BODY_CLASS}}">
+    <a class="skip" href="#contenido">Saltar al contenido</a>
+    {{NAV}}
+
+    <main id="contenido">
+      {{CONTENT}}
+    </main>
+
+    {{FOOTER}}
+
+    <script src="script.js"></script>
+  </body>
+</html>

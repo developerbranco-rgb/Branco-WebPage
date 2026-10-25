@@ -1,0 +1,50 @@
+{
+  "_ayuda": "Ajustes opcionales. La clave es el nombre del archivo de video SIN extensión. 'titulos' cambia el texto que se ve en la tarjeta (\"\" = sin título). 'lugares' fuerza el lugar/grupo de un video. 'nombres' corrige cómo se escribe un nombre que sale de una carpeta o archivo (tildes, mayúsculas). 'portadas' elige qué video es la portada de cada página (ruta dentro de videos/).",
+
+  "titulos": {
+    "carelleswhisper": "Careless Whisper",
+    "BRANCO SAXOFONISTA ": "",
+    "BLAME ON THE BOGGIE -ENTERO en los juegos Suramericanos dia 3": "Blame It on the Boogie",
+    "You know i´m no good - ENTEROen los juegos suramericanos dia 3": "You Know I'm No Good",
+    "TAKE ON ME ENTERO DIA 7": "Take On Me",
+    "TAKE ON ME ENTERO DIA 13": "Take On Me",
+    "Que pasó La @jamdecancionesrosario y la magia de @branco.sax en @capiclub_ ! Eso pasó!Acá dejamo": "Jam de Canciones Rosario en Capi Club",
+    "LA MONA GIMENEZ DOPASHOCK": "La Mona Giménez",
+    "LA MONA GIMENEZ MAS CORTO 2DA PARTE DOPASHOCK": "La Mona Giménez (parte 2)",
+    "WHAT ITS LOVE DOPASHOCK": "What Is Love",
+    "SEMINARE FINAL VIDEO PAPA DOPASHOCK": "Seminare",
+    "PAPANAMERICANA DOPASHOCK": "Papa Americana",
+    "VIDEO FOREST EMINEM": "Eminem",
+    "video nano forest": "",
+    "EventoEmpresarialEnFRANK": "Evento empresarial",
+    "CityCenter": "",
+    "BANDA": ""
+  },
+
+  "lugares": {
+    "CityCenter": "City Center",
+    "EventoEmpresarialEnFRANK": "Frank",
+    "LA MONA GIMENEZ DOPASHOCK": "Sesión al aire libre",
+    "LA MONA GIMENEZ MAS CORTO 2DA PARTE DOPASHOCK": "Sesión al aire libre",
+    "LAMBADA DOPASHOCK": "Sesión al aire libre",
+    "PAPANAMERICANA DOPASHOCK": "Sesión al aire libre",
+    "SEMINARE FINAL VIDEO PAPA DOPASHOCK": "Sesión al aire libre",
+    "STEREO LOVE DOPASHOCK": "Sesión al aire libre",
+    "STRUMP DOPASHOCK": "Sesión al aire libre",
+    "WHAT ITS LOVE DOPASHOCK": "Sesión al aire libre"
+  },
+
+  "nombres": {
+    "Capitan": "Capitán",
+    "El Aserradero": "El Aserradero",
+    "Funklopa": "Funklopa",
+    "Psicostevia": "Psicostevia"
+  },
+
+  "portadas": {
+    "lugares": "lugares/Complejo Forest/VIDEO FOREST EMINEM.mp4",
+    "juegos-suramericanos": "Juegos suramericanos/TAKE ON ME ENTERO DIA 13.mp4",
+    "dopashock": "DopaShock/DOPASHOCK EN CAPITAN 1.mp4",
+    "eventos": "Eventos/BRANCO SAXOFONISTA .MP4"
+  }
+}

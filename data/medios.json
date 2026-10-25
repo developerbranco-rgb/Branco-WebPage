@@ -1,0 +1,440 @@
+{
+ "videos": {
+  "bandas/BANDA.mov": {
+   "src": "media/bandas/banda.mp4",
+   "poster": "media/bandas/banda.webp",
+   "w": 720,
+   "h": 1280,
+   "dur": 18.0,
+   "size": 175285460,
+   "mb": 4.1
+  },
+  "bandas/FUNKLOPA/FUNKLOPA.mp4": {
+   "src": "media/bandas/funklopa/funklopa.mp4",
+   "poster": "media/bandas/funklopa/funklopa.webp",
+   "w": 720,
+   "h": 1280,
+   "dur": 18.8,
+   "size": 143644831,
+   "mb": 4.7
+  },
+  "bandas/PSICOSTEVIA/Que pasó La @jamdecancionesrosario y la magia de @branco.sax en @capiclub_ ! Eso pasó!Acá dejamo.mp4": {
+   "src": "media/bandas/psicostevia/que-paso-la-jamdecancionesrosario-y-la-magia-de-branco-sax-e.mp4",
+   "poster": "media/bandas/psicostevia/que-paso-la-jamdecancionesrosario-y-la-magia-de-branco-sax-e.webp",
+   "w": 720,
+   "h": 1280,
+   "dur": 54.1,
+   "size": 12497624,
+   "mb": 12.7
+  },
+  "DopaShock/DOPASHOCK EN CAPITAN 1.mp4": {
+   "src": "media/dopashock/dopashock-en-capitan-1.mp4",
+   "poster": "media/dopashock/dopashock-en-capitan-1.webp",
+   "w": 720,
+   "h": 1280,
+   "dur": 46.4,
+   "size": 91067964,
+   "mb": 9.3
+  },
+  "DopaShock/DOPASHOCK EN CAPITAN 2.mp4": {
+   "src": "media/dopashock/dopashock-en-capitan-2.mp4",
+   "poster": "media/dopashock/dopashock-en-capitan-2.webp",
+   "w": 720,
+   "h": 1280,
+   "dur": 28.6,
+   "size": 59450305,
+   "mb": 4.8
+  },
+  "DopaShock/DOPASHOCK EN CAPITAN 3.mp4": {
+   "src": "media/dopashock/dopashock-en-capitan-3.mp4",
+   "poster": "media/dopashock/dopashock-en-capitan-3.webp",
+   "w": 720,
+   "h": 1280,
+   "dur": 26.5,
+   "size": 50034318,
+   "mb": 4.8
+  },
+  "DopaShock/DOPASHOCK EN EL ASERRADERO 1.mp4": {
+   "src": "media/dopashock/dopashock-en-el-aserradero-1.mp4",
+   "poster": "media/dopashock/dopashock-en-el-aserradero-1.webp",
+   "w": 720,
+   "h": 1280,
+   "dur": 47.6,
+   "size": 72830174,
+   "mb": 9.5
+  },
+  "DopaShock/DOPASHOCK EN EL ASERRADERO 2.mp4": {
+   "src": "media/dopashock/dopashock-en-el-aserradero-2.mp4",
+   "poster": "media/dopashock/dopashock-en-el-aserradero-2.webp",
+   "w": 720,
+   "h": 1280,
+   "dur": 44.0,
+   "size": 66824377,
+   "mb": 8.9
+  },
+  "DopaShock/DOPASHOCK EN EL ASERRADERO 3.mp4": {
+   "src": "media/dopashock/dopashock-en-el-aserradero-3.mp4",
+   "poster": "media/dopashock/dopashock-en-el-aserradero-3.webp",
+   "w": 720,
+   "h": 1280,
+   "dur": 60.9,
+   "size": 93330221,
+   "mb": 11.0
+  },
+  "DopaShock/LA MONA GIMENEZ DOPASHOCK.mp4": {
+   "src": "media/dopashock/la-mona-gimenez-dopashock.mp4",
+   "poster": "media/dopashock/la-mona-gimenez-dopashock.webp",
+   "w": 720,
+   "h": 1280,
+   "dur": 45.1,
+   "size": 107343974,
+   "mb": 8.5
+  },
+  "DopaShock/LA MONA GIMENEZ MAS CORTO 2DA PARTE DOPASHOCK.mp4": {
+   "src": "media/dopashock/la-mona-gimenez-mas-corto-2da-parte-dopashock.mp4",
+   "poster": "media/dopashock/la-mona-gimenez-mas-corto-2da-parte-dopashock.webp",
+   "w": 720,
+   "h": 1280,
+   "dur": 29.5,
+   "size": 71967367,
+   "mb": 5.6
+  },
+  "DopaShock/LAMBADA DOPASHOCK.mp4": {
+   "src": "media/dopashock/lambada-dopashock.mp4",
+   "poster": "media/dopashock/lambada-dopashock.webp",
+   "w": 720,
+   "h": 1280,
+   "dur": 30.8,
+   "size": 46559015,
+   "mb": 7.4
+  },
+  "DopaShock/PAPANAMERICANA DOPASHOCK.mp4": {
+   "src": "media/dopashock/papanamericana-dopashock.mp4",
+   "poster": "media/dopashock/papanamericana-dopashock.webp",
+   "w": 720,
+   "h": 1280,
+   "dur": 32.0,
+   "size": 76524096,
+   "mb": 6.0
+  },
+  "DopaShock/SEMINARE FINAL VIDEO PAPA DOPASHOCK.mp4": {
+   "src": "media/dopashock/seminare-final-video-papa-dopashock.mp4",
+   "poster": "media/dopashock/seminare-final-video-papa-dopashock.webp",
+   "w": 720,
+   "h": 1280,
+   "dur": 83.1,
+   "size": 198745561,
+   "mb": 20.1
+  },
+  "DopaShock/STEREO LOVE DOPASHOCK.mp4": {
+   "src": "media/dopashock/stereo-love-dopashock.mp4",
+   "poster": "media/dopashock/stereo-love-dopashock.webp",
+   "w": 720,
+   "h": 1280,
+   "dur": 38.5,
+   "size": 89453185,
+   "mb": 7.4
+  },
+  "DopaShock/STRUMP DOPASHOCK.mp4": {
+   "src": "media/dopashock/strump-dopashock.mp4",
+   "poster": "media/dopashock/strump-dopashock.webp",
+   "w": 720,
+   "h": 1280,
+   "dur": 33.6,
+   "size": 79495034,
+   "mb": 5.7
+  },
+  "DopaShock/WHAT ITS LOVE DOPASHOCK.mp4": {
+   "src": "media/dopashock/what-its-love-dopashock.mp4",
+   "poster": "media/dopashock/what-its-love-dopashock.webp",
+   "w": 720,
+   "h": 1280,
+   "dur": 53.8,
+   "size": 127221125,
+   "mb": 9.9
+  },
+  "Eventos/89270f45-6e95-4878-88b0-e51ea0ee5f00.MP4": {
+   "src": "media/eventos/89270f45-6e95-4878-88b0-e51ea0ee5f00.mp4",
+   "poster": "media/eventos/89270f45-6e95-4878-88b0-e51ea0ee5f00.webp",
+   "w": 464,
+   "h": 832,
+   "dur": 17.5,
+   "size": 2684664,
+   "mb": 1.5
+  },
+  "Eventos/BRANCO SAXOFONISTA .MP4": {
+   "src": "media/eventos/branco-saxofonista.mp4",
+   "poster": "media/eventos/branco-saxofonista.webp",
+   "w": 720,
+   "h": 1280,
+   "dur": 37.2,
+   "size": 87103274,
+   "mb": 6.0
+  },
+  "Eventos/carelleswhisper.MP4": {
+   "src": "media/eventos/carelleswhisper.mp4",
+   "poster": "media/eventos/carelleswhisper.webp",
+   "w": 720,
+   "h": 1280,
+   "dur": 62.2,
+   "size": 14555928,
+   "mb": 8.8
+  },
+  "Eventos/EVENTOS (2).mov": {
+   "src": "media/eventos/eventos-2.mp4",
+   "poster": "media/eventos/eventos-2.webp",
+   "w": 720,
+   "h": 1280,
+   "dur": 20.4,
+   "size": 24237342,
+   "mb": 3.0
+  },
+  "Eventos/EVENTOS (3).mov": {
+   "src": "media/eventos/eventos-3.mp4",
+   "poster": "media/eventos/eventos-3.webp",
+   "w": 720,
+   "h": 1280,
+   "dur": 43.4,
+   "size": 61863486,
+   "mb": 7.6
+  },
+  "Eventos/EVENTOS (4).mov": {
+   "src": "media/eventos/eventos-4.mp4",
+   "poster": "media/eventos/eventos-4.webp",
+   "w": 480,
+   "h": 848,
+   "dur": 89.1,
+   "size": 16771264,
+   "mb": 8.4
+  },
+  "Eventos/EVENTOS (5).MOV": {
+   "src": "media/eventos/eventos-5.mp4",
+   "poster": "media/eventos/eventos-5.webp",
+   "w": 720,
+   "h": 1280,
+   "dur": 32.7,
+   "size": 60819133,
+   "mb": 5.9
+  },
+  "Eventos/EVENTOS.mov": {
+   "src": "media/eventos/eventos.mp4",
+   "poster": "media/eventos/eventos.webp",
+   "w": 720,
+   "h": 1280,
+   "dur": 50.6,
+   "size": 71687627,
+   "mb": 6.0
+  },
+  "Eventos/IMG_8028.mov": {
+   "src": "media/eventos/img-8028.mp4",
+   "poster": "media/eventos/img-8028.webp",
+   "w": 720,
+   "h": 1280,
+   "dur": 43.4,
+   "size": 61863486,
+   "mb": 7.6
+  },
+  "Juegos suramericanos/A MI MANERA ENTERO DIA 3.mp4": {
+   "src": "media/juegos-suramericanos/a-mi-manera-entero-dia-3.mp4",
+   "poster": "media/juegos-suramericanos/a-mi-manera-entero-dia-3.webp",
+   "w": 720,
+   "h": 1280,
+   "dur": 235.3,
+   "size": 30682216,
+   "mb": 22.9
+  },
+  "Juegos suramericanos/BLAME ON THE BOGGIE -ENTERO en los juegos Suramericanos dia 3.mp4": {
+   "src": "media/juegos-suramericanos/blame-on-the-boggie-entero-en-los-juegos-suramericanos-dia-3.mp4",
+   "poster": "media/juegos-suramericanos/blame-on-the-boggie-entero-en-los-juegos-suramericanos-dia-3.webp",
+   "w": 404,
+   "h": 720,
+   "dur": 174.6,
+   "size": 20148315,
+   "mb": 11.1
+  },
+  "Juegos suramericanos/CRAZY UNA PARTE.mp4": {
+   "src": "media/juegos-suramericanos/crazy-una-parte.mp4",
+   "poster": "media/juegos-suramericanos/crazy-una-parte.webp",
+   "w": 720,
+   "h": 1280,
+   "dur": 48.5,
+   "size": 117007074,
+   "mb": 9.8
+  },
+  "Juegos suramericanos/GET LUCKY UNA PARTE.mp4": {
+   "src": "media/juegos-suramericanos/get-lucky-una-parte.mp4",
+   "poster": "media/juegos-suramericanos/get-lucky-una-parte.webp",
+   "w": 720,
+   "h": 1280,
+   "dur": 42.3,
+   "size": 99405765,
+   "mb": 10.4
+  },
+  "Juegos suramericanos/HYMN FOR THE WEEKEND ENTERO DIA 7.mp4": {
+   "src": "media/juegos-suramericanos/hymn-for-the-weekend-entero-dia-7.mp4",
+   "poster": "media/juegos-suramericanos/hymn-for-the-weekend-entero-dia-7.webp",
+   "w": 720,
+   "h": 1280,
+   "dur": 166.8,
+   "size": 376223029,
+   "mb": 34.8
+  },
+  "Juegos suramericanos/JUST THE TWO OF US - ENTERO en los Juegos suramericanos dia 3.mp4": {
+   "src": "media/juegos-suramericanos/just-the-two-of-us-entero-en-los-juegos-suramericanos-dia-3.mp4",
+   "poster": "media/juegos-suramericanos/just-the-two-of-us-entero-en-los-juegos-suramericanos-dia-3.webp",
+   "w": 404,
+   "h": 720,
+   "dur": 169.4,
+   "size": 19014851,
+   "mb": 9.4
+  },
+  "Juegos suramericanos/NO CULPES A LA PLAYA ENTERO DIA 13.mp4": {
+   "src": "media/juegos-suramericanos/no-culpes-a-la-playa-entero-dia-13.mp4",
+   "poster": "media/juegos-suramericanos/no-culpes-a-la-playa-entero-dia-13.webp",
+   "w": 720,
+   "h": 1280,
+   "dur": 142.8,
+   "size": 328957169,
+   "mb": 23.0
+  },
+  "Juegos suramericanos/TAKE ON ME ENTERO DIA 13.mp4": {
+   "src": "media/juegos-suramericanos/take-on-me-entero-dia-13.mp4",
+   "poster": "media/juegos-suramericanos/take-on-me-entero-dia-13.webp",
+   "w": 720,
+   "h": 1280,
+   "dur": 204.3,
+   "size": 461914240,
+   "mb": 32.3
+  },
+  "Juegos suramericanos/TAKE ON ME ENTERO DIA 7.mp4": {
+   "src": "media/juegos-suramericanos/take-on-me-entero-dia-7.mp4",
+   "poster": "media/juegos-suramericanos/take-on-me-entero-dia-7.webp",
+   "w": 720,
+   "h": 1280,
+   "dur": 190.4,
+   "size": 433736296,
+   "mb": 40.0
+  },
+  "Juegos suramericanos/You know i´m no good - ENTEROen los juegos suramericanos dia 3.mp4": {
+   "src": "media/juegos-suramericanos/you-know-i-m-no-good-enteroen-los-juegos-suramericanos-dia-3.mp4",
+   "poster": "media/juegos-suramericanos/you-know-i-m-no-good-enteroen-los-juegos-suramericanos-dia-3.webp",
+   "w": 404,
+   "h": 720,
+   "dur": 243.5,
+   "size": 27407395,
+   "mb": 13.3
+  },
+  "lugares/CityCenter.mov": {
+   "src": "media/lugares/citycenter.mp4",
+   "poster": "media/lugares/citycenter.webp",
+   "w": 720,
+   "h": 1280,
+   "dur": 4.6,
+   "size": 8767227,
+   "mb": 1.0
+  },
+  "lugares/Complejo Forest/VIDEO FOREST EMINEM.mp4": {
+   "src": "media/lugares/complejo-forest/video-forest-eminem.mp4",
+   "poster": "media/lugares/complejo-forest/video-forest-eminem.webp",
+   "w": 720,
+   "h": 1280,
+   "dur": 21.6,
+   "size": 66009958,
+   "mb": 5.4
+  },
+  "lugares/Complejo Forest/video nano forest.mov": {
+   "src": "media/lugares/complejo-forest/video-nano-forest.mp4",
+   "poster": "media/lugares/complejo-forest/video-nano-forest.webp",
+   "w": 720,
+   "h": 1280,
+   "dur": 13.7,
+   "size": 40839642,
+   "mb": 3.4
+  },
+  "lugares/EventoEmpresarialEnFRANK.mov": {
+   "src": "media/lugares/eventoempresarialenfrank.mp4",
+   "poster": "media/lugares/eventoempresarialenfrank.webp",
+   "w": 720,
+   "h": 1280,
+   "dur": 4.6,
+   "size": 8727882,
+   "mb": 0.9
+  }
+ },
+ "fotos": {
+  "branco": [
+   {
+    "orig": "33821cbd-6e87-4674-a113-5b8decb8e649.jpeg",
+    "src": "assets/fotos/branco/33821cbd-6e87-4674-a113-5b8decb8e649.webp",
+    "w": 1200,
+    "h": 1600,
+    "size": 739219
+   },
+   {
+    "orig": "4489A528-52BD-4693-988E-56C1945275E2.PNG",
+    "src": "assets/fotos/branco/4489a528-52bd-4693-988e-56c1945275e2.webp",
+    "w": 1024,
+    "h": 1536,
+    "size": 1959588
+   },
+   {
+    "orig": "61680175-1712-4247-91b3-e969742b6474.JPG",
+    "src": "assets/fotos/branco/61680175-1712-4247-91b3-e969742b6474.webp",
+    "w": 1200,
+    "h": 1600,
+    "size": 1735904
+   },
+   {
+    "orig": "83615509-DB95-4491-8C3F-D92193397E67.JPG",
+    "src": "assets/fotos/branco/83615509-db95-4491-8c3f-d92193397e67.webp",
+    "w": 1066,
+    "h": 1600,
+    "size": 980192
+   },
+   {
+    "orig": "8A78E7C1-A06F-4A55-A9C1-62CB24276FE4.jpg",
+    "src": "assets/fotos/branco/8a78e7c1-a06f-4a55-a9c1-62cb24276fe4.webp",
+    "w": 868,
+    "h": 1600,
+    "size": 402025
+   },
+   {
+    "orig": "DSC07868.JPEG",
+    "src": "assets/fotos/branco/dsc07868.webp",
+    "w": 1067,
+    "h": 1600,
+    "size": 3415491
+   },
+   {
+    "orig": "DSC07872.JPEG",
+    "src": "assets/fotos/branco/dsc07872.webp",
+    "w": 1067,
+    "h": 1600,
+    "size": 3255699
+   },
+   {
+    "orig": "DSC08238.JPEG",
+    "src": "assets/fotos/branco/dsc08238.webp",
+    "w": 1067,
+    "h": 1600,
+    "size": 3892945
+   },
+   {
+    "orig": "PHOTO-2025-11-18-20-11-53.jpg",
+    "src": "assets/fotos/branco/photo-2025-11-18-20-11-53.webp",
+    "w": 1200,
+    "h": 1600,
+    "size": 1026989
+   }
+  ],
+  "dopashock": [
+   {
+    "orig": "SaveClip.App_845747306_18116726695906739_5377023438422152409_n.jpg",
+    "src": "assets/fotos/dopashock/saveclip-app-845747306-18116726695906739-5377023438422152409.webp",
+    "w": 1213,
+    "h": 1600,
+    "size": 396883
+   }
+  ]
+ }
+}

@@ -1,0 +1,199 @@
+<!-- ============ HERO ============ -->
+      <header class="hero wrap" id="inicio">
+        <div class="hero__text">
+          <p class="eyebrow">Saxofonista · Show en vivo</p>
+          <h1>Cada <em>show</em>, una experiencia.</h1>
+          <p class="hero__lead">
+            Saxo en vivo para <strong>bares, eventos privados, empresas y festivales</strong>.
+            Un show que levanta cualquier noche.
+          </p>
+          <div class="hero__cta">
+            <a href="#contacto" class="btn btn--gold">Contratar</a>
+            <a href="#explorar" class="btn btn--ghost">▶ Ver videos</a>
+          </div>
+          <div class="hero__feats">
+            <span><svg viewBox="0 0 24 24"><path d="M9 18V5l12-2v13" stroke-linecap="round" stroke-linejoin="round" /><circle cx="6" cy="18" r="3" /><circle cx="18" cy="16" r="3" /></svg>Solista, con DJ o con banda</span>
+            <span><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4V5z" /><path d="M15.5 8.5a5 5 0 0 1 0 7" /><path d="M19 5a9 9 0 0 1 0 14" /></svg>Sonido propio</span>
+            <span><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg>Repertorio a medida</span>
+          </div>
+        </div>
+
+        <div class="hero__media">
+          <div class="hero__phone">
+            <video id="heroVideo" src="assets/video/branco.mp4" poster="assets/poster/branco.webp"
+              width="720" height="1280" autoplay muted loop playsinline controls preload="auto"></video>
+            <button class="hero__sound" id="soundHint" type="button" hidden>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z" stroke-linecap="round" stroke-linejoin="round" /><path d="M16 9.5 21 15M21 9.5 16 15" stroke-linecap="round" stroke-linejoin="round" /></svg>
+              Activar sonido
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <!-- ============ PARA QUIÉN ============ -->
+      <section class="strip" aria-label="Ideal para">
+        <div class="wrap strip__inner">
+          <span class="strip__label">Ideal para</span>
+          <ul class="strip__list">
+            <li>Bares y restaurantes</li>
+            <li>Eventos privados</li>
+            <li>Empresas</li>
+            <li>Festivales</li>
+            <li>Casamientos</li>
+            <li>Boliches</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============ NÚMEROS ============ -->
+      <section class="stats wrap reveal" aria-label="Trayectoria">
+        {{STATS}}
+      </section>
+
+      <!-- ============ EL SHOW ============ -->
+      <section class="section" id="show">
+        <div class="wrap show">
+          <div class="show__media reveal">
+            <img src="assets/img/suit1.webp" alt="Branco tocando el saxo con traje en un evento"
+              width="1000" height="1844" loading="lazy" decoding="async" />
+            <div class="frame"></div>
+          </div>
+          <div class="show__text reveal">
+            <p class="eyebrow">El show</p>
+            <h2>Se adapta a cada lugar y a cada público</h2>
+            <p class="show__lead">
+              Desde una cena tranquila hasta el pico de la pista: armo el repertorio y la energía
+              según el momento. Llego con todo resuelto para que vos solo disfrutes.
+            </p>
+            <div class="show__list">
+              <div class="feat">
+                <div class="ico"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M9 18V5l12-2v13" stroke-linecap="round" stroke-linejoin="round" /><circle cx="6" cy="18" r="3" /><circle cx="18" cy="16" r="3" /></svg></div>
+                <div><h3>Saxo en vivo con pistas</h3><p>Formato solista, junto al DJ o con banda completa.</p></div>
+              </div>
+              <div class="feat">
+                <div class="ico"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M8 8v8M4 11v2M16 6v12M20 9v6" /></svg></div>
+                <div><h3>Pop, R&amp;B, soul, electrónica y clásicos</h3><p>Repertorio personalizado para tu evento.</p></div>
+              </div>
+              <div class="feat">
+                <div class="ico"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4V5z" /><path d="M15.5 8.5a5 5 0 0 1 0 7" /><path d="M19.5 5a9 9 0 0 1 0 14" /></svg></div>
+                <div><h3>Equipo de sonido propio</h3><p>Me adapto al lugar, sea un bar o un escenario grande.</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ EXPLORAR (se arma solo con las carpetas de videos) ============ -->
+      <section class="section section--soft" id="explorar">
+        <div class="wrap">
+          <div class="section__head section__head--center reveal">
+            <p class="eyebrow">Videos</p>
+            <h2>Mirá el show en vivo</h2>
+            <p>Elegí una sección para ver todos los videos.</p>
+          </div>
+          <div class="xgrid">
+            {{EXPLORAR}}
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ DOPASHOCK ============ -->
+      <section class="dopa-band" aria-label="DopaShock">
+        <div class="dopa-band__bg" style="background-image:url('{{DOPA_IMG}}')" aria-hidden="true"></div>
+        <div class="wrap dopa-band__inner reveal">
+          <img class="dopa-band__emblem" src="assets/logos/dopashock-emblema.webp" alt="" width="600" height="600" loading="lazy" />
+          <div>
+            <p class="eyebrow">Proyecto en vivo</p>
+            <img class="dopa-band__logo" src="assets/logos/dopashock-wordmark.webp" alt="DopaShock" width="843" height="296" loading="lazy" />
+            <p>Saxo, beats y energía de pista. Un show pensado para boliches, fiestas y festivales.</p>
+            <p class="dopa-band__meta">{{DOPA_META}}</p>
+            <a href="dopashock.html" class="btn btn--dopa">Ver DopaShock</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ FOTOS ============ -->
+      <section class="section" id="fotos">
+        <div class="wrap">
+          <div class="section__head section__head--center reveal">
+            <p class="eyebrow">Fotos</p>
+            <h2>Momentos</h2>
+          </div>
+          <div class="carousel reveal" data-carousel>
+            <button class="carousel__btn carousel__btn--prev" data-dir="-1" aria-label="Anterior">
+              <svg viewBox="0 0 24 24"><path d="M15 5 8 12l7 7" stroke-linecap="round" stroke-linejoin="round" /></svg>
+            </button>
+            <div class="carousel__track" tabindex="0" role="region" aria-label="Carrusel de fotos">
+              {{FOTOS}}
+            </div>
+            <button class="carousel__btn carousel__btn--next" data-dir="1" aria-label="Siguiente">
+              <svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7" stroke-linecap="round" stroke-linejoin="round" /></svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CONTACTO ============ -->
+      <section class="section section--soft" id="contacto">
+        <div class="wrap contact">
+          <div class="contact__info reveal">
+            <p class="eyebrow">Contacto</p>
+            <h2>Creá tu evento como te lo imaginás</h2>
+            <p class="contact__lead">Contame qué tenés en mente y te paso disponibilidad y propuesta.</p>
+            <div class="contact__list">
+              <a class="cline" data-wa href="#" target="_blank" rel="noopener">
+                <span class="ci"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" /></svg></span>
+                <div><small>WhatsApp</small><b>Escribime directo</b></div>
+              </a>
+              <a class="cline" data-mail href="#">
+                <span class="ci"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2" /><path d="m22 7-10 5L2 7" /></svg></span>
+                <div><small>Email</small><b data-mail-text>brancoantu9@gmail.com</b></div>
+              </a>
+              <a class="cline" data-ig href="#" target="_blank" rel="noopener">
+                <span class="ci"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" /><circle cx="12" cy="12" r="4" /><path d="M17.5 6.5h.01" /></svg></span>
+                <div><small>Instagram</small><b data-ig-text>@branco.sax</b></div>
+              </a>
+            </div>
+          </div>
+
+          <form class="form reveal" id="contactForm">
+            <div class="row">
+              <div class="field">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" name="nombre" type="text" autocomplete="name" placeholder="Tu nombre" required />
+              </div>
+              <div class="field">
+                <label for="tel">Teléfono</label>
+                <input id="tel" name="tel" type="tel" autocomplete="tel" placeholder="Opcional" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="field">
+                <label for="tipo">Tipo de evento</label>
+                <select id="tipo" name="tipo">
+                  <option>Bar / Restaurante</option>
+                  <option>Fiesta privada</option>
+                  <option>Evento de empresa</option>
+                  <option>Festival</option>
+                  <option>Casamiento / Recepción</option>
+                  <option>Cumpleaños</option>
+                  <option>Boliche</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="fecha">Fecha</label>
+                <input id="fecha" name="fecha" type="date" />
+              </div>
+            </div>
+            <div class="field">
+              <label for="msg">Mensaje</label>
+              <textarea id="msg" name="msg" placeholder="Lugar, horario, cantidad de invitados, si necesitás sonido..."></textarea>
+            </div>
+            <button type="submit" class="btn btn--wa">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20z" /></svg>
+              Enviar por WhatsApp
+            </button>
+          </form>
+        </div>
+      </section>

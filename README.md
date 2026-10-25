@@ -1,52 +1,58 @@
 # 🎷 Branco — Portfolio Saxofonista
 
-Landing page / portfolio para mostrar mi trabajo como saxofonista y recibir
-contrataciones para casamientos, eventos corporativos, fiestas y bares.
+Carta de presentación para bares, eventos, empresas y festivales.
 
-**Sitio en vivo:** https://brancomartin.github.io
+**Sitio en vivo:** https://developerbranco-rgb.github.io
 
-## ✏️ Cómo editar mis datos de contacto
+## ➕ Cómo agregar videos (lo único que vas a hacer seguido)
 
-Abrí **`script.js`** y editá SOLO el bloque `CONFIG` de arriba de todo:
+1. Copiá el video a la carpeta que corresponda dentro de `videos/`:
 
-```js
-const CONFIG = {
-  WHATSAPP:  "5490000000000",   // tu número, con código de país, sin + ni espacios
-  INSTAGRAM: "tu_usuario",       // tu usuario de Instagram, sin la @
-  EMAIL:     "brancoantu9@gmail.com"
-};
-```
+   | Carpeta                         | Página                | Cómo se agrupa                                              |
+   | ------------------------------- | --------------------- | ----------------------------------------------------------- |
+   | `videos/lugares/`               | Lugares               | Una **subcarpeta por lugar** (ej. `lugares/Complejo Forest/`). El nombre de la carpeta es el título. |
+   | `videos/Eventos/`               | Eventos               | Todos juntos (o en subcarpetas si querés grupos).           |
+   | `videos/Juegos suramericanos/`  | Juegos Suramericanos  | Si el nombre dice **ENTERO** va a "Canciones enteras", separado por **DIA 3**, **DIA 7**, etc. |
+   | `videos/DopaShock/`             | DopaShock             | Por lugar, según el nombre: `DOPASHOCK EN <LUGAR> 1.mp4` (o una subcarpeta por lugar). |
+   | `videos/bandas/`                | Bandas                | Una **subcarpeta por banda** (ej. `bandas/FUNKLOPA/`).       |
+   | `videos/<Carpeta nueva>/`       | ¡Página nueva sola!   | Aparece en el menú automáticamente.                         |
 
-- **WhatsApp (Argentina):** `549` + código de área + número. Ej: `5493471234567`
-- **Instagram:** solo el usuario, sin `@`.
+2. Hacé doble clic en **`actualizar.bat`**. Comprime los videos nuevos, rearma
+   las páginas y (si le decís que sí) los sube a internet.
 
-El botón flotante, el formulario y los enlaces de contacto se actualizan solos.
+Fotos: poné las imágenes en `imagenes/IMAGENES BRANCO/` (carrusel del inicio) o
+`imagenes/IMAGENES DOPASHOCK/` (fondo de DopaShock) y corré `actualizar.bat`.
+
+### Cambiar títulos o lugares
+
+Por defecto el título sale del nombre del archivo. Para corregir uno (tildes,
+mayúsculas, sacar un título), editá **`tools/ajustes.json`**. La clave es el
+nombre del archivo sin extensión.
+
+## ✏️ Datos de contacto
+
+En **`script.js`**, bloque `CONFIG` de arriba de todo (WhatsApp, Instagram, email).
 
 ## 🗂️ Estructura
 
 ```
-index.html      → la página
-styles.css      → estilos
-script.js       → interacción + configuración de contacto
-robots.txt      → permiso de indexado + ubicación del sitemap
-sitemap.xml     → mapa del sitio para Google
-assets/
-  img/          → fotos (.webp para la web, .jpg de respaldo / redes)
-  video/        → videos optimizados para web (H.264 .mp4, faststart)
-  poster/       → miniaturas de los videos (.webp)
+index.html, lugares.html, ...  → páginas (GENERADAS: no editarlas a mano)
+styles.css / script.js         → diseño e interacción
+tools/plantillas/              → textos del inicio, pie de página, <head>
+tools/generar_paginas.py       → arma las páginas (textos de cada sección arriba de todo)
+tools/procesar_medios.py       → comprime videos/fotos (720p H.264, ~1.5 Mbps)
+tools/ajustes.json             → títulos/lugares a mano
+media/                         → videos web + miniaturas (generados)
+assets/                        → logos, fotos y video del inicio
+videos/, imagenes/             → ORIGINALES (no se suben a internet)
 ```
 
-> La URL del sitio aparece en `index.html` (canonical, Open Graph y datos
-> estructurados), en `robots.txt` y en `sitemap.xml`. Si publicás en otro
-> dominio, cambiala en esos tres archivos.
+> GitHub Pages permite ~1 GB de sitio. `actualizar.bat` avisa si te acercás al
+> límite. La URL del sitio está en `SITE_URL` dentro de `tools/generar_paginas.py`.
 
-Los videos y fotos originales viven fuera del repo (en OneDrive) para mantenerlo liviano.
-
-## 🚀 Cómo verlo localmente
-
-Abrí `index.html` en el navegador (doble clic), o serví la carpeta:
+## 🚀 Verlo en la compu
 
 ```bash
 python -m http.server 8000
-# luego abrí http://localhost:8000
+# abrí http://localhost:8000
 ```

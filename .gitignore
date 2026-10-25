@@ -1,7 +1,11 @@
 # Archivos fuente originales (pesados) — NO se suben.
-# Ya están optimizados dentro de /assets. Los originales quedan en tu OneDrive.
+# tools/procesar_medios.py genera las versiones web dentro de /media y /assets.
 /videos/
 /imagenes/
+
+# Temporales
+__pycache__/
+*.tmp.mp4
 
 # Sistema
 Thumbs.db
