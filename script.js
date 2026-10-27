@@ -19,9 +19,10 @@ const CONFIG = {
   // ---- Enlaces de contacto (todas las páginas) ----
   const pageName = document.title.split(" — ")[0];
   const defaultWa = waMsg(
-    document.body.classList.contains("page-index")
+    document.body.dataset.waMsg ||
+    (document.body.classList.contains("page-index")
       ? "¡Hola Branco! Me gustaría consultarte por un show de saxo para mi evento."
-      : "¡Hola Branco! Vi tus videos de " + pageName + " y me gustaría consultarte por un show."
+      : "¡Hola Branco! Vi tus videos de " + pageName + " y me gustaría consultarte por un show.")
   );
   $$("[data-wa]").forEach((a) => { a.href = defaultWa; a.target = "_blank"; a.rel = "noopener"; });
   $$("[data-ig]").forEach((a) => (a.href = igURL));

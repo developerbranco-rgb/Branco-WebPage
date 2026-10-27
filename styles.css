@@ -669,3 +669,72 @@ main, .footer { overflow-x: clip; }
   .group--singles .vgrid--v { grid-template-columns: repeat(2, 1fr); }
   .lcard__name { font-size: 1rem; }
 }
+
+/* ==========================================================================
+   Propuestas por tipo de cliente (para-*.html) — ver tools/propuestas.json
+   ========================================================================== */
+.btn--wa svg { margin-right: 8px; flex-shrink: 0; }
+.prop-hero h1 { font-size: clamp(2.5rem, 5.6vw, 4.3rem); }
+.xgrid--props .xcard__title { font-size: 1.45rem; }
+
+.pgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
+.pfeat {
+  padding: 28px 24px; border-radius: var(--radius); border: 1px solid var(--line);
+  background: var(--surface); transition: border-color 0.3s, transform 0.3s;
+}
+.pfeat:hover { border-color: var(--gold-line); transform: translateY(-4px); }
+.pfeat__n { display: block; font-family: var(--serif); font-size: 1.9rem; color: var(--gold); line-height: 1; margin-bottom: 16px; }
+.pfeat h3 { font-size: 1.2rem; margin-bottom: 8px; }
+.pfeat p { color: var(--ink-soft); font-size: 0.93rem; line-height: 1.55; }
+
+.pmore { text-align: center; margin-top: 36px; }
+
+/* Banda Juegos Suramericanos (antecedente en todas las propuestas) */
+.jband { position: relative; overflow: hidden; padding: 110px 0; isolation: isolate; background: #0a0806; text-align: center; }
+.jband__bg {
+  position: absolute; inset: -40px; z-index: -2; background-size: cover; background-position: center 30%;
+  filter: blur(4px) saturate(1.1); opacity: 0.4; transform: scale(1.05);
+}
+.jband::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: radial-gradient(ellipse at 50% 40%, rgba(217, 169, 78, 0.22), transparent 65%),
+    linear-gradient(180deg, rgba(10, 8, 6, 0.7), rgba(10, 8, 6, 0.85));
+}
+.jband .eyebrow { color: #d9a94e; }
+.jband h2 { font-size: clamp(2rem, 5vw, 3.4rem); color: #f6f0e7; }
+.jband h2 em { color: #d9a94e; }
+.jband p:not(.eyebrow) { color: #d6cdbf; max-width: 600px; margin: 16px auto 0; }
+.jband__meta { font-size: 0.9rem; color: #a59a8a !important; margin-bottom: 28px !important; }
+.jband .btn--gold { background: #d9a94e; color: #1a1410; }
+
+.ptwo { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
+.ptwo h2 { font-size: clamp(1.8rem, 3.6vw, 2.5rem); margin-bottom: 24px; }
+.venues { display: flex; flex-wrap: wrap; gap: 10px; }
+.venues li {
+  padding: 8px 16px; border-radius: 100px; border: 1px solid var(--line);
+  background: var(--surface); font-size: 0.92rem;
+}
+.venues li:last-child { border-color: var(--gold-line); color: var(--gold); }
+.steps { list-style: none; counter-reset: paso; display: grid; gap: 14px; }
+.steps li {
+  counter-increment: paso; position: relative; padding: 18px 20px 18px 72px;
+  border-radius: 14px; border: 1px solid var(--line); background: var(--surface);
+}
+.steps li::before {
+  content: counter(paso); position: absolute; left: 20px; top: 50%; transform: translateY(-50%);
+  width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  background: var(--gold-soft); border: 1px solid var(--gold-line); color: var(--gold); font-weight: 700;
+}
+.steps b { display: block; }
+.steps span { color: var(--ink-soft); font-size: 0.9rem; }
+
+.footer__navs { display: flex; flex-direction: column; gap: 10px; }
+.footer__links--props a { color: var(--ink-mute); }
+
+@media (max-width: 960px) {
+  .ptwo { grid-template-columns: 1fr; gap: 48px; }
+}
+@media (max-width: 560px) {
+  .jband { padding: 80px 0; }
+  .pfeat { padding: 22px 20px; }
+}

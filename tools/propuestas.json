@@ -1,0 +1,143 @@
+{
+  "_ayuda": "Una página de propuesta por tipo de cliente (para-<slug>.html). 'video_principal' y 'videos' son rutas dentro de videos/ (igual que en ajustes.json). En 'titulo', lo que va entre *asteriscos* sale en dorado. 'whatsapp' es el mensaje que le aparece escrito al cliente cuando toca el botón: así sabés desde qué página te escribe. 'titulo_compartir' y 'descripcion' (opcionales) son lo que se ve en la vista previa al mandar el link por WhatsApp/Instagram y en Google.",
+  "propuestas": [
+    {
+      "slug": "bares",
+      "nombre": "Bares y restaurantes",
+      "titulo_compartir": "Show de saxo instrumental para darle un toque distintivo a tu bar",
+      "descripcion": "Show de saxo acústico, con un repertorio variado con hits de todas las épocas y canciones que acompañan la dinámica de la noche y del bar.",
+      "eyebrow": "Propuesta para bares y restaurantes",
+      "titulo": "Una noche con *saxo en vivo* en tu bar",
+      "lead": "Show de saxo con pistas: pop, soul, funk y hits conocidos. Relajado para la cena y más arriba cuando la noche se pone movida. Llego con sonido propio y me adapto al espacio.",
+      "chips": ["Saxo solista con pistas", "Sonido propio", "Fechas fijas o especiales"],
+      "incluye_titulo": "Qué le suma a tu local",
+      "incluye": [
+        ["Una noche distinta", "La música en vivo hace que la gente se quede, consuma más y vuelva. Y te da contenido para tus redes."],
+        ["Repertorio que lee la sala", "Versiones tranquilas para la cena y hits para cuando arranca la noche."],
+        ["Sin complicaciones", "Llevo mi equipo de sonido. Solo necesito un rincón y un enchufe."],
+        ["Fechas fijas", "Ideal como cita fija (una vez por mes o cada quince días) para que el público la espere."]
+      ],
+      "ideal": ["Bares", "Restaurantes", "Terrazas", "Rooftops", "Cervecerías", "Vinotecas"],
+      "video_principal": "Solista en Bares/BEAT MEMO.MP4",
+      "videos": [
+        "Solista en Bares/en GALLO ROJO.MP4",
+        "Solista en Bares/en VINITO ROSARIO.MP4",
+        "Solista en Bares/en HARLEM PUB.MP4",
+        "Eventos/carelleswhisper.MP4",
+        "Juegos suramericanos/GET LUCKY UNA PARTE.mp4"
+      ],
+      "cierre_titulo": "Probemos una fecha",
+      "cierre": "Arrancamos con una noche y, si funciona en tu local, armamos fechas fijas.",
+      "whatsapp": "¡Hola Branco! Vi tu propuesta para bares y me gustaría consultarte por una fecha de saxo en vivo en nuestro local."
+    },
+    {
+      "slug": "fiestas",
+      "nombre": "Boliches, fiestas y DJs",
+      "eyebrow": "Propuesta para boliches, fiestas y DJs",
+      "titulo": "Saxo en vivo *arriba de la pista*",
+      "lead": "Saxo sobre house, electrónica y los hits que todos conocen. Me sumo al set del DJ o llevo DopaShock, el live set de saxo y teclados, para el pico de la noche.",
+      "chips": ["Saxo + DJ", "DopaShock live set", "Show en la pista"],
+      "incluye_titulo": "Cómo funciona",
+      "incluye": [
+        ["Saxo + DJ", "Entro en los momentos clave del set: el pico de la pista, el cumpleaños, el brindis."],
+        ["DopaShock live set", "Saxo y tecladista con beats y electrónica en vivo: un show propio, no solo un músico invitado."],
+        ["Show que se ve", "Me muevo entre la gente y armo momentos que todos filman y comparten."],
+        ["Para DJs", "Si sos DJ, sumá el saxo a tu propuesta y ofrecé un servicio más completo."]
+      ],
+      "ideal": ["Boliches", "Fiestas privadas", "Cumpleaños", "Fiestas de 15", "Fiestas temáticas", "DJs"],
+      "video_principal": "DopaShock/DOPASHOCK EN CAPITAN 1.mp4",
+      "videos": [
+        "DopaShock/DOPASHOCK EN EL ASERRADERO 1.mp4",
+        "lugares/Complejo Forest/VIDEO FOREST EMINEM.mp4",
+        "DopaShock/DOPASHOCK EN MISTICA.MP4",
+        "DopaShock/STEREO LOVE DOPASHOCK.mp4",
+        "DopaShock/WHAT ITS LOVE DOPASHOCK.mp4"
+      ],
+      "cierre_titulo": "Armemos la noche",
+      "cierre": "Contame el lugar, la fecha y qué música suena. Te propongo en qué momentos entra el saxo.",
+      "whatsapp": "¡Hola Branco! Vi tu propuesta para fiestas y boliches y me interesa sumar saxo en vivo.",
+      "tema": "dopa"
+    },
+    {
+      "slug": "casamientos",
+      "nombre": "Casamientos y eventos sociales",
+      "eyebrow": "Propuesta para casamientos, salones y eventos sociales",
+      "titulo": "Saxo en vivo para *acompañar tu celebración*",
+      "lead": "Saxo en vivo para la recepción, la entrada, el brindis o la fiesta. Armo el repertorio con los novios o con quien cumple años, y me coordino con el salón y el DJ para que todo salga perfecto.",
+      "chips": ["Repertorio a medida", "Recepción y fiesta", "Coordinación con salón y DJ"],
+      "incluye_titulo": "Momentos del evento",
+      "incluye": [
+        ["Recepción", "Música elegante mientras llegan los invitados."],
+        ["Entrada y momentos clave", "La canción que elijan, en vivo, para la entrada, el vals o el brindis."],
+        ["Fiesta", "Saxo sobre los hits de la pista, junto al DJ, para levantar la noche."],
+        ["Para salones y organizadores", "Sumame a la lista de artistas que les recomiendan a sus clientes."]
+      ],
+      "ideal": ["Casamientos", "Fiestas de 15", "Cumpleaños", "Aniversarios", "Salones de eventos", "Wedding planners"],
+      "video_principal": "Eventos/EVENTOS (2).mov",
+      "videos": [
+        "Eventos/carelleswhisper.MP4",
+        "Eventos/EVENTOS (4).mov",
+        "Eventos/EVENTOS (3).mov",
+        "Eventos/89270f45-6e95-4878-88b0-e51ea0ee5f00.MP4",
+        "Eventos/BRANCO SAXOFONISTA .MP4"
+      ],
+      "cierre_titulo": "Consultá tu fecha",
+      "cierre": "Contame la fecha, el lugar y qué momentos te imaginás con saxo. Te paso disponibilidad y presupuesto.",
+      "whatsapp": "¡Hola Branco! Vi tu propuesta para casamientos y eventos y quiero consultarte disponibilidad para una fecha."
+    },
+    {
+      "slug": "empresas",
+      "nombre": "Empresas y eventos corporativos",
+      "eyebrow": "Propuesta para empresas y eventos corporativos",
+      "titulo": "Saxo en vivo para *los eventos de tu empresa*",
+      "lead": "Saxo en vivo para fiestas de fin de año, lanzamientos, cócteles y presentaciones de marca. Una presentación cuidada y adaptada a la imagen de tu empresa.",
+      "chips": ["Presentación profesional", "Sonido propio", "Repertorio a medida"],
+      "incluye_titulo": "Dónde suma el saxo",
+      "incluye": [
+        ["Cóctel y recepción", "Un ambiente sofisticado para la bienvenida y el networking."],
+        ["Momentos de impacto", "Apertura del evento, presentación de producto o cierre."],
+        ["Fiesta de fin de año", "Saxo sobre hits y electrónica para terminar la noche arriba."],
+        ["Coordinación", "Me ajusto al cronograma y a la producción del evento."]
+      ],
+      "ideal": ["Fiestas de fin de año", "Lanzamientos", "Cócteles", "Convenciones", "Inauguraciones", "Activaciones de marca"],
+      "video_principal": "Eventos/EVENTOS.mov",
+      "videos": [
+        "Eventos/BRANCO SAXOFONISTA .MP4",
+        "Eventos/EVENTOS (5).MOV",
+        "Eventos/EVENTOS (4).mov",
+        "lugares/EventoEmpresarialEnFRANK.mov",
+        "Juegos suramericanos/Un pedacito de “September” en los juegos suramericanos día 2. PH. @pasajeraentrance.ph @paulusba.mp4"
+      ],
+      "cierre_titulo": "Hablemos de tu evento",
+      "cierre": "Contame el tipo de evento, la fecha y la cantidad de invitados. Te armo una propuesta a medida.",
+      "whatsapp": "¡Hola Branco! Vi tu propuesta para empresas y me gustaría consultarte por un show para un evento corporativo."
+    },
+    {
+      "slug": "festivales",
+      "nombre": "Festivales y productoras",
+      "eyebrow": "Propuesta para festivales, productoras y espacios culturales",
+      "titulo": "Saxo en vivo para *festivales y espacios culturales*",
+      "lead": "Toqué en los Juegos Suramericanos Santa Fe 2026 frente a público de todo el continente. Llevo un show solista, el live set DopaShock con tecladista o colaboraciones con bandas.",
+      "chips": ["Escenarios al aire libre", "3 formatos de show", "Todo público"],
+      "incluye_titulo": "Qué puedo llevar",
+      "incluye": [
+        ["Show solista", "Saxo con pistas: clásicos, pop, hits latinos y electrónica."],
+        ["DopaShock live set", "Saxo y teclados en vivo, pensado para la noche y la pista."],
+        ["Con banda", "Colaboraciones con bandas de Rosario para un formato más grande."],
+        ["Para productoras", "Un artista con varios formatos para sumar a tus producciones."]
+      ],
+      "ideal": ["Festivales", "Ferias", "Fiestas populares", "Productoras", "Espacios culturales", "Municipios"],
+      "video_principal": "Juegos suramericanos/GET LUCKY UNA PARTE.mp4",
+      "videos": [
+        "Juegos suramericanos/TAKE ON ME ENTERO DIA 13.mp4",
+        "Juegos suramericanos/HYMN FOR THE WEEKEND ENTERO DIA 7.mp4",
+        "Juegos suramericanos/CRAZY UNA PARTE.mp4",
+        "DopaShock/DOPASHOCK EN EL ASERRADERO 3.mp4",
+        "bandas/FUNKLOPA/FUNKLOPA EN HARLEM PUB.MP4"
+      ],
+      "cierre_titulo": "Sumame a tu programación",
+      "cierre": "Contame del evento y te paso la propuesta, la ficha técnica y la disponibilidad.",
+      "whatsapp": "¡Hola Branco! Vi tu propuesta para festivales y producciones y me gustaría hablar sobre una posible fecha."
+    }
+  ]
+}
